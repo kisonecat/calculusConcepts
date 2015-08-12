@@ -9,11 +9,9 @@
 \colorlet{penColor4}{green!50!black} % Color of a curve in a plot
 \colorlet{penColor5}{orange!80!black} % Color of a curve in a plot
 
-
 %% Several questions have been borrowed from Cornell's Good Questions
 %% project (grant DUE-0231154).
 %% http://www.math.cornell.edu/~GoodQuestions/materials.html
-
 
 \title{Conceptual Questions}
 
@@ -21,7 +19,6 @@
 \newcommand{\recommendation}[1]{}
 %\newcommand{\GoodQuestions}[1]{\marginpar{\textbf{Good Questions} #1}}
 \newcommand{\GoodQuestions}[1]{}
-
 
 \begin{document}
 
@@ -33,8 +30,8 @@
 We are considering using some of these questions to monitor how our
 calculus courses are going, but to do this, \textbf{we need your
   help.}  Many of your fellow stuents have answered many of the
-questions below; can you try to answer some of them?  Your help us
-choose the best questions.
+questions below; can you try your best to answer some of them?  Your
+feedback will help us to choose the best questions.
 
 \begin{question}
 How did you find out about these questions?
@@ -42,8 +39,10 @@ How did you find out about these questions?
 \end{freeResponse}
 \end{question}
 
+\section{Some questions}
 
-%\begin{shuffle} 
+\begin{shuffle} 
+
 \begin{problem}
   Two real numbers, $x$ and $y$, are shown below on a number line.
   \begin{image}
@@ -66,8 +65,6 @@ How did you find out about these questions?
   \end{multipleChoice}
 \end{problem}
 
-
-
 \begin{problem}
   Two real numbers, $x$ and $y$, are shown below on a number line.
   \begin{image}
@@ -89,8 +86,6 @@ How did you find out about these questions?
     \choice{4}
   \end{multipleChoice}
 \end{problem}
-
-
 
 
 \begin{problem}
@@ -116,31 +111,6 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  Four numbers $A$, $B$, $C$, and $D$ are shown below on a number line.
-  \begin{image}
-  \begin{tikzpicture}[x=0.09\textwidth]
-    \draw[-{>[scale=1.75]}] (-0.4\textwidth,0) -- (0.4\textwidth,0);
-    \foreach \x in {-4,...,4} {%
-      \draw (\x,-.1) -- (\x,.1);
-      \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
-    }
-    \draw (-3.9,0) node [circle,fill,inner sep=1pt,label=above:$A$](e){};
-    \draw (-3.5,0) node [circle,fill,inner sep=1pt,label=above:$B$](e){};
-    \draw (0.5,0) node [circle,fill,inner sep=1pt,label=above:$C$](e){};
-    \draw (3.6,0) node [circle,fill,inner sep=1pt,label=above:$D$](e){};
-  \end{tikzpicture}
-  \end{image}
-  Which is closest to the average of $A$, $B$, $C$, $D$?
-  \begin{multipleChoice}
-    \choice{$A$}
-    \choice{$B$}
-    \choice[correct]{$C$}
-    \choice{$D$}
-  \end{multipleChoice}
-\end{problem}
-
-
-\begin{problem}
   Two numbers, $x$ and $y$, are shown below on a number line.
   \begin{image}
     \begin{tikzpicture}[x=0.09\textwidth]
@@ -161,11 +131,6 @@ How did you find out about these questions?
     \choice{$6.25$}
   \end{multipleChoice}
 \end{problem}
-
-
-
-
-
 
 \begin{problem}
   Two numbers, $x$ and $y$, are shown below on a number line.
@@ -235,6 +200,17 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
+%  \recommendation{Elizabeth}
+  Let $f$ be a polynomial function.  Assume you know that the rate of change of $f$ is always increasing on the $[a,b]$.  What can you say about $f$?
+  \begin{multipleChoice}
+    \choice{$f$ must have an absolute maximum value on $[a,b]$ but it is unknown whether it has an absolute minimum value}
+    \choice{$f$ must have an absolute minimum value on $[a,b]$ but it is unknown whether it has an absolute maximum value}
+    \choice[correct]{$f$ must have both an absolute maximum value and an absolute minimum value}
+    \choice{It is not guaranteed that $f$ will have an absolute maximum or an absolute minimum value on $[a,b]$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
   The number $x$ is shown below on a number line.
   \begin{image}
     \begin{tikzpicture}[x=0.19\textwidth]
@@ -256,30 +232,6 @@ How did you find out about these questions?
     \choice{$B$}
     \choice{$C$}
     \choice{$D$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Four equally spaced numbers are shown below on a number line.
-  \begin{image}
-    \begin{tikzpicture}[x=0.19\textwidth]
-      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
-      \foreach \x in {0,...,4} {%
-        \draw (\x,-.1) -- (\x,.1);
-        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
-      }
-      \draw (0.5,0) node [circle,fill,inner sep=1pt,label=above:$a$](e){};
-      \draw (1.5,0) node [circle,fill,inner sep=1pt,label=above:$b$](e){};
-      \draw (2.5,0) node [circle,fill,inner sep=1pt,label=above:$c$](e){};
-      \draw (3.5,0) node [circle,fill,inner sep=1pt,label=above:$d$](e){};
-    \end{tikzpicture}
-  \end{image}
-  Let $f(x) = \ln x$ and consider $f(a)$ and $f(b)$ and $f(c)$ and $f(d)$.  Which pair of numbers is farthest apart?
-  \begin{multipleChoice}
-    \choice[correct]{$f(a)$ and $f(b)$}
-    \choice{$f(b)$ and $f(c)$}
-    \choice{$f(c)$ and $f(d)$}
-    \choice{These pairs are all equally far apart}
   \end{multipleChoice}
 \end{problem}
 
@@ -328,78 +280,6 @@ How did you find out about these questions?
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-  Two pairs of numbers are shown below.
-  \begin{image}
-    \begin{tikzpicture}[x=0.19\textwidth]
-      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
-      \foreach \x in {0,...,4} {%
-        \draw (\x,-.1) -- (\x,.1);
-        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
-      }
-      \draw (0.25,0) node [circle,fill,inner sep=1pt,label=above:$s$](e){};
-      \draw (1.25,0) node [circle,fill,inner sep=1pt,label=above:$s+h$](e){};
-      \draw (2.75,0) node [circle,fill,inner sep=1pt,label=above:$t$](e){};
-      \draw (3.75,0) node [circle,fill,inner sep=1pt,label=above:$t+h$](e){};
-    \end{tikzpicture}
-  \end{image}
-  Let $f(x) = x^3$.  How does $f(s+h)-f(s)$ compare with $f(t+h) - f(t)$?
-  \begin{multipleChoice}
-    \choice[correct]{$f(s+h) - f(s) < f(t+h) - f(t)$}
-    \choice{$f(s+h) - f(s) = f(t+h) - f(t)$}
-    \choice{$f(s+h) - f(s) > f(t+h) - f(t)$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Two pairs of numbers are shown below.
-  \begin{image}
-    \begin{tikzpicture}[x=0.19\textwidth]
-      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
-      \foreach \x in {0,...,4} {%
-        \draw (\x,-.1) -- (\x,.1);
-        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
-      }
-      \draw (0.25,0) node [circle,fill,inner sep=1pt,label=above:$s$](e){};
-      \draw (1.25,0) node [circle,fill,inner sep=1pt,label=above:$s+h$](e){};
-      \draw (2.75,0) node [circle,fill,inner sep=1pt,label=above:$t$](e){};
-      \draw (3.75,0) node [circle,fill,inner sep=1pt,label=above:$t+h$](e){};
-    \end{tikzpicture}
-  \end{image}
-  Let $f(x) = -1/x$.  How does $f(s+h)-f(s)$ compare with $f(t+h) - f(t)$?
-  \begin{multipleChoice}
-    \choice{$f(s+h) - f(s) < f(t+h) - f(t)$}
-    \choice{$f(s+h) - f(s) = f(t+h) - f(t)$}
-    \choice[correct]{$f(s+h) - f(s) > f(t+h) - f(t)$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Two pairs of numbers are shown below.
-  \begin{image}
-    \begin{tikzpicture}[x=0.19\textwidth]
-      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
-      \foreach \x in {0,...,4} {%
-        \draw (\x,-.1) -- (\x,.1);
-        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
-      }
-      \draw (3.141592654,-.1) -- (3.141592654,.1);
-      \node[anchor=north,yshift=-2pt] at (3.141592654,0) {$\pi$};
-      \draw (0.25,0) node [circle,fill,inner sep=1pt,label=above:$s$](e){};
-      \draw (0.65,0) node [circle,fill,inner sep=1pt,label=above:$s+h$](e){};
-      \draw (3.19,0) node [circle,fill,inner sep=1pt,label=above:$t$](e){};
-      \draw (3.59,0) node [circle,fill,inner sep=1pt,label=above:$t+h$](e){};
-    \end{tikzpicture}
-  \end{image}
-  Let $f(x) = \sin x$.  How does $f(s+h)-f(s)$ compare with $f(t+h) - f(t)$?
-  \begin{multipleChoice}
-    \choice{$f(s+h) - f(s) < f(t+h) - f(t)$}
-    \choice{$f(s+h) - f(s) = f(t+h) - f(t)$}
-    \choice[correct]{$f(s+h) - f(s) > f(t+h) - f(t)$}
-  \end{multipleChoice}
-\end{problem}
-
-
 
 %\section{Understanding functions}
 
@@ -439,7 +319,8 @@ How did you find out about these questions?
 
 \begin{problem}
   Let $f$ and $g$ be two functions satisfying the relationship $f(x+3)
-  = g(x)$.  Suppose the point $(0,0)$ is on the graph of $f$.
+  = g(x)$.  Suppose the point $(0,0)$ is on the graph of $f$. What
+  follows?
 	\begin{multipleChoice}
 	  \choice[correct]{The point $(-3, 0)$ is on the graph of $g$}
 	  \choice{The point $(3, 0)$ is on the graph of $g$}
@@ -477,8 +358,9 @@ How did you find out about these questions?
   \end{multipleChoice}
 \end{problem}
 
+
 \begin{problem}
-	Let $f$ be the function defined by $f(x) = x^2+1$, and $g$ be the function defined by the rule $g(z) = z^2+1$. 
+	Let $f$ be the function defined by $f(x) = x^2+1$, and $g$ be the function defined by the rule $g(z) = z^2+1$.   Are these the same?
 	\begin{multipleChoice}
 		\choice{Since $f$ and $g$ have differing domain, they are different functions}
 		\choice[correct]{$f$ and $g$ are the same function}
@@ -488,7 +370,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-	Let $f$ be the function defined by $f(a) = \frac{a^2}{a}$, and $g$ be the function defined by the rule $g(z) = \frac{b^3}{b^2}$. 
+	Let $f$ be the function defined by $f(a) = \frac{a^2}{a}$, and $g$ be the function defined by the rule $g(z) = \frac{b^3}{b^2}$.  Are these the same?
 	\begin{multipleChoice}
 		\choice{Since $f$ and $g$ have differing domain, they are different functions}
 		\choice[correct]{$f$ and $g$ are the same function}
@@ -498,7 +380,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-	Let $f$ be the function defined by $f(x) = \sqrt[4]{x^4}$, and $g$ be the function defined by the rule $g(y) = \left| y \right|$. 
+	Let $f$ be the function defined by $f(x) = \sqrt[4]{x^4}$, and $g$ be the function defined by the rule $g(y) = \left| y \right|$.  Are these the same?
 	\begin{multipleChoice}
 		\choice{Since $f$ and $g$ have differing domain, they are different functions}
 		\choice[correct]{$f$ and $g$ are the same function}
@@ -510,8 +392,8 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  \recommendation{Elizabeth}
-  \GoodQuestions{Subject: Limits, 2Q}
+  %\recommendation{Elizabeth}
+  %\GoodQuestions{Subject: Limits, 2Q}
   If $f(x)=\frac{x^2-4}{x-2}$ and $g(x)=x+2$, what can we say about
   these two functions?
   \begin{multipleChoice}
@@ -529,8 +411,8 @@ How did you find out about these questions?
 %\section{Review of famous functions}
 
 \begin{problem}
-%\recommendation{Vic}
-   Which of the following statements is true?
+  % \recommendation{Vic}
+  Which of the following statements is true?
    \begin{multipleChoice}
      \choice{$\sin^{-1}(x)$ is the inverse function of $\sin(x)$} %this is perhaps a bit too subtle?
      \choice[correct]{$\sin\left(\sin^{-1}\left(\frac{1}{2}\right)\right) = \frac{1}{2}$} 
@@ -562,48 +444,47 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-	Suppose $f(x) = \log(x+1) - \log(x)$.  What is true about $f$?
-	\begin{multipleChoice}
-       \choice{When $x$ is very large, $f(x)$ is very large.}
-       \choice[correct]{When $x$ is very large, $f(x)$ is close to $0$.}
-       \choice{When $x$ is close to $0$, $f(x)$ is close to $1$.}
-       \choice{When $x$ is close to one, $f(x)$ is close to $0$.}
+  Suppose $f(x) = \log(x+1) - \log(x)$.  What is true about $f$?
+  \begin{multipleChoice}
+    \choice{When $x$ is very large, $f(x)$ is very large.}
+    \choice[correct]{When $x$ is very large, $f(x)$ is close to $0$.}
+    \choice{When $x$ is close to $0$, $f(x)$ is close to $1$.}
+    \choice{When $x$ is close to one, $f(x)$ is close to $0$.}
   \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-	Is there an angle $\theta$ with $\sin(\theta) = \frac{1}{5}$ %Tests that they understand sine is not just the collection of 3 essentially different ``standard" values we have them memorize.
-	\begin{multipleChoice}
-		\choice[correct]{Yes}
-		\choice{No}
-	\end{multipleChoice}
+  % Tests that they understand sine is not just the collection of 3 essentially different ``standard" values we have them memorize.
+  Is there an angle $\theta$ with $\sin(\theta) = \frac{1}{5}$
+  \begin{multipleChoice}
+    \choice[correct]{Yes}
+    \choice{No}
+  \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-	Is there an angle $\theta$ with $\cos(\theta) = \frac{5}{4}$ ?
-	\begin{multipleChoice}
-		\choice{Yes}
-		\choice[correct]{No}
-	\end{multipleChoice}
+  Is there an angle $\theta$ with $\cos(\theta) = \frac{5}{4}$ ?
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-	Is there an angle $\phi$ with $\sin(\phi) = \frac{5}{13}$ and $\cos(\phi) = -\frac{12}{13}$?
-	\begin{multipleChoice}
-		\choice[correct]{Yes}
-		\choice{No}
-	\end{multipleChoice}
+  Is there an angle $\phi$ with $\sin(\phi) = \frac{5}{13}$ and $\cos(\phi) = -\frac{12}{13}$?
+  \begin{multipleChoice}
+    \choice[correct]{Yes}
+    \choice{No}
+  \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-	Is there an angle $y$ with $\sin(y) = \frac{4}{5}$ and $\cos(y) = \frac{1}{5}$?
-	\begin{multipleChoice}
-		\choice{Yes}
-		\choice[correct]{No}
-	\end{multipleChoice}
+  Is there an angle $y$ with $\sin(y) = \frac{4}{5}$ and $\cos(y) = \frac{1}{5}$?
+  \begin{multipleChoice}
+    \choice{Yes}
+    \choice[correct]{No}
+  \end{multipleChoice}
 \end{problem}
-
-%%\clearpage
 
 %\section{What is a limit?}
 
@@ -639,12 +520,12 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-	Suppose $x$ is a small negative number.  What can be said about $\frac{x}{|x|}$?
-	\begin{multipleChoice}
-		\choice[correct]{It is close to $-1$}
-		\choice{It is close to $1$}
-		\choice{It is close to $0$}
-	\end{multipleChoice}
+  Suppose $x$ is a small negative number.  What can be said about $\frac{x}{|x|}$?
+  \begin{multipleChoice}
+    \choice[correct]{It is close to $-1$}
+    \choice{It is close to $1$}
+    \choice{It is close to $0$}
+  \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
@@ -678,12 +559,12 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-	I start with $0.3$.  I add $0.03$ to it.  Then I add $0.003$.  Then $0.0003$.  I keep adding numbers for a very long time.  What happens to the sum as I add more terms?
-	\begin{multipleChoice}
-		\choice{The sum gets very large.  If I went long enough, the sum would surpass $10$}
-		\choice[correct]{The sum never gets very large.  It would never surpass $1$, no matter how many terms I summed}
-		\choice{The sum of the terms gets closer to $0$}
-	\end{multipleChoice}
+  I start with $0.3$.  I add $0.03$ to it.  Then I add $0.003$.  Then $0.0003$.  I keep adding numbers for a very long time.  What happens to the sum as I add more terms?
+  \begin{multipleChoice}
+    \choice{The sum gets very large.  If I went long enough, the sum would surpass $10$.}
+    \choice[correct]{The sum never gets very large.  It would never surpass $1$, no matter how many terms I summed.}
+    \choice{The sum of the terms gets closer to $0$.}
+  \end{multipleChoice}
 \end{problem}
 
 %%\clearpage
@@ -701,39 +582,6 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  % BADBAD draw this on a number line
-  Suppose $x$ is close to $0$ and $y$ is close to $-2$ and $z$ is close to $2$.  What is true about these numbers?
-  \begin{multipleChoice}
-    \choice{$y/x < z/x$}
-    \choice[correct]{$y/x^4 < z/x^2$}
-    \choice{$y/x^5 < z/x^3$}
-    \choice{$y/x^5 < z/x^5$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-	%This problem would be a real stretch for someone who has not seen limits, or the derivative, already.
-  Suppose $x$ is $0.000001$ and $y = 10$ and $z = 9$.  Which is larger:
-  $A = \frac{\sin (yx)}{zx}$ or $B = \frac{\sin (zx)}{yx}$?
-  \begin{multipleChoice}
-    \choice[correct]{$A$ is larger than $B$.}
-    \choice{$B$ is larger than $A$.}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-	%This problem would be a real stretch for someone who has not seen limits, or the derivative, already.
-  Suppose $x$ is $0.00\dots 0017$ with $10^{17}$ zeroes after the
-  decimal point, and suppose $y$ and $z$ are large positive integers
-  with $y > z$.  Which is larger: $A = \frac{\sin (yx)}{zx}$ or
-  $B = \frac{\sin (zx)}{yx}$?
-  \begin{multipleChoice}
-    \choice[correct]{$A$ is larger than $B$.}
-    \choice{$B$ is larger than $A$.}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
   Pick some positive real number; take its square root, and then the
   square root of that, and then the square root of that, and so
   on---thousands and thousands of times.  Call the result $x$.  What
@@ -744,21 +592,6 @@ How did you find out about these questions?
     \choice{The number $x$ is very large.}
   \end{multipleChoice}
 \end{problem}
-
-\begin{problem}
-  Pick some positive real number; add one; take its square root, and
-  then add one and take the square root of that, and then add one and
-  again take the square root of that, and so on---thousands and
-  thousands of times.  Call the result $x$.  What do you expect to be
-  true of $x$?
-  \begin{multipleChoice}
-    \choice{The number $x$ is close to $0$.}
-    \choice{The number $x$ is close to $1$.}
-    \choice[correct]{The number $x$ is between $1$ and $2$.}
-    \choice{The number $x$ is very large.}
-  \end{multipleChoice}
-\end{problem}
-
 
 
 %%\clearpage
@@ -787,30 +620,6 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  % "This seems difficult without advanced knowledge of sine."  I agree, but I really intend students to make the less than careful observation that \(sin x \approx x\) when \(x\) is close to zero, and so the \(\frac{\sin \sin x}{x}\) is about \(x/x = 1\).  The point of including $\pi^{-1000}$ is to see if students believe $\sin \pi = 0$ means $\sin \pi^{-1000} = 0$.
-  When $x = \pi^{-1000}$, what number below is closest to $\frac{\sin \sin x}{x}$?
-  \begin{multipleChoice}
-    \choice{$-1$}
-    \choice{$0$}
-    \choice[correct]{$1$}
-    \choice{This quantity is undefined}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $A$ and $a$ differ by at most $2$ and suppose $B$ and $b$
-  differ by at most $1$.  In symbols, this means that $|A - a| < 2$ and $|B - b| < 1$.
-  By how much could $A/B$ and $a/b$ differ?
-  \begin{multipleChoice}
-    \choice{By no more than $1$, meaning $|A/B - a/b| < 1$}
-    \choice{By no more than $2$, meaning $|A/B - a/b| < 2$}
-    \choice{By no more than a factor of $2$, meaning $\left| \frac{A/B}{a/b} \right| < 2$}
-    \choice{By no more than a factor of $1/2$, meaning $\left| \frac{A/B}{a/b} \right| < \frac{1}{2}$}
-    \choice[correct]{By any amount}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
   By choosing $x$ appropriately, how large can $1/x^2$ be?
   \begin{multipleChoice}
     \choice{The quantity $1/x^2$ can be no bigger than $1$.}
@@ -819,67 +628,29 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
-	%Difficult without advanced sine knowledge
-  Suppose $x = 3 \cdot 10^{-1000}$ and $y = 6 \cdot 10^{-1000}$.  What is the best guess for $\frac{\sin (xy)}{x^2}$?
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Limits, 11Q}
+  If a function $f$ is not defined at $x=a$, then what must be true?
   \begin{multipleChoice}
-    \choice{$0$}
-    \choice{$1$}
-    \choice[correct]{$2$}
-    \choice{$3$}
-  \end{multipleChoice}
+    \choice{$\lim_{x\to a} f(x)$ cannot exist}
+    \choice[correct]{$\lim_{x\to a} f(x)$ could be $0$}
+    \choice{$\lim_{x\to a} f(x)$ must approach $\infty$}
+    \choice{None of the above.}
+  \end{multipleChoice} 
 \end{problem}
 
 \begin{problem}
-	%Difficult without advanced sine knowledge
-
-  Suppose $x = 5 \cdot 10^{-1000}$ and $y = 2 \cdot 10^{-999}$.  What is the best guess for $\frac{\sin (xy)}{x^2}$?
-  \begin{multipleChoice}
-    \choice{$0$}
-    \choice{$1$}
-    \choice{$2$}
-    \choice{$3$}
-    \choice[correct]{$4$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  By choosing $x$ appropriately, how small can $f(x) = \frac{1}{\sin (x^2)}$ be?
-  \begin{multipleChoice}
-    \choice{The quantity $f(x)$ cannot be negative}
-    \choice{The quantity $f(x)$ must be larger than $-1$ but can take negative values}
-    \choice[correct]{The quantity $f(x)$ can be made as negative as desired}
-  \end{multipleChoice}
-\end{problem}
-
-
-
-\begin{problem}
-  \recommendation{Vic}
-  \GoodQuestions{Subject: Limits, 11Q}
-If a function $f$ is not defined at $x=a$,
-\begin{multipleChoice}
-\choice{$\lim_{x\to a} f(x)$ cannot exist}
-\choice[correct]{$\lim_{x\to a} f(x)$ could be $0$}
-\choice{$\lim_{x\to a} f(x)$ must approach $\infty$}
-\choice{none of the above.}
-\end{multipleChoice} 
-\end{problem}
-
-\begin{problem}
-  \recommendation{Vic}
-  \GoodQuestions{Subject: Limits 16Q}
-  \textbf{True} or \textbf{False}.  Consider a function $f$ with
-  the property that $\lim_{x\to a} f(x) =0$.  Now consider another
-  function $g$ also defined near $a$.  Then $\lim_{x\to a}
-  \left(f(x)g(x)\right) = 0$.
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Limits 16Q}
+  Consider a function $f$ with the property that
+  $\lim_{x\to a} f(x) =0$.  Now consider another function $g$ also
+  defined near $a$.  Must it be the case that
+  $\lim_{x\to a} \left(f(x)g(x)\right) = 0$?
   \begin{multipleChoice}
     \choice{True}
     \choice[correct]{False}
   \end{multipleChoice}
 \end{problem}
-
-
 
 
 %%\clearpage
@@ -888,18 +659,16 @@ If a function $f$ is not defined at $x=a$,
 
 
 \begin{problem}
-  \recommendation{Vic}
-  \GoodQuestions{Subject: Limits 19Q}
-  What is the maximum number of horizontal asymptotes that a function
-  can have?
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Limits 19Q}
+  What is the maximum number of horizontal asymptotes that a function can have?
   \begin{multipleChoice}
-  \choice{one}
-  \choice[correct]{two}
-  \choice{three}
-  \choice{as many as we want} 
+    \choice{One}
+    \choice[correct]{Two}
+    \choice{Three}
+    \choice{As many as we want} 
   \end{multipleChoice}
 \end{problem}
-
 
 \begin{problem}
   Suppose whenever $x$ is very large, $f(x)$ is close to 1.  What is true about $f$?
@@ -911,17 +680,6 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-  For a certain function $f$ with domain consisting of all real
-  numbers, it is the case that $f(x) < 0$ and yet $f$ is increasing.
-  What must be true of $f$?
-  \begin{multipleChoice}
-    \choice{The graph of $f$ has a horizontal asymptote at $y = 0$}
-    \choice{When $x$ is very negative, $f(x)$ is also very negative}
-    \choice{The graph of $f$ has a horizontal asymptote at $y=N$ for some negative number $N$}
-    \choice[correct]{None of these statements need be true}
-  \end{multipleChoice}
-\end{problem}
 
 %\begin{problem}
 %  Consider the function $f(x) = \log_{10} \log_{10} \log_{10} x$.  On my calculator, I notice that $f(10^{100}) \approx 0.3$.  What is true about $f$?
@@ -946,45 +704,30 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  Suppose $f$ is a function with the following properties:
-  \begin{itemize}
-  \item $f(x) > 0$,
-  \item when $x$ is very large, $f(x)$ is close to $0$, and
-  \item when $x$ is close to zero, $f(x)$ is close to $1$.
-  \end{itemize}
-  When $x$ is a small positive number, what do you expect to be true about $1/f(1/x)$?
+  The function $f$ has a horizontal asymptote of $y = 7$.  Which of
+  the following is true?
   \begin{multipleChoice}
-    \choice{It is very negative}
-    \choice{It is close to $-1$}
-    \choice{It is close to $0$}
-    \choice{It is close to $1$}
-    \choice[correct]{It is very large}
+    \choice{The graph of $f$ never crosses the line $y=7$}
+    \choice{The graph of $f$ can only cross the line $y=7$ a
+      finite number of times} \choice[correct]{The graph of $f$
+      could cross the line $y=7$ infinitely many times}
   \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
-	$f$ has a horizontal asymptote of $y = 7$.  Which of the following is true?
-	\begin{multipleChoice}
-		\choice{The graph of $f$ never crosses the line $y=7$}
-		\choice{The graph of $f$ can only cross the line $y=7$ a finite number of times}
-		\choice[correct]{The graph of $f$ could cross the line $y=7$ infinitely many times}
-	\end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-	$f$ has a horizontal asymptote of $y = 2$.  Which of the following is true?
-	\begin{multipleChoice}
-		\choice[correct]{$g(x) = \sin(f(x))$ has a horizontal asymptote.}
-		\choice{$g(x) = f(\sin(x))$ has a horizontal asymptote.}
-		\choice{$g(x) =f(x) +\sin(x)$ has a horizontal asymptote.}
-	\end{multipleChoice}
+  $f$ has a horizontal asymptote of $y = 2$.  Which of the following is true?
+  \begin{multipleChoice}
+    \choice[correct]{$g(x) = \sin(f(x))$ has a horizontal asymptote.}
+    \choice{$g(x) = f(\sin(x))$ has a horizontal asymptote.}
+    \choice{$g(x) =f(x) +\sin(x)$ has a horizontal asymptote.}
+  \end{multipleChoice}
 \end{problem}
 
 \begin{problem}
   Does the function $f(x) = \frac{x}{|x|}$ have $y=-1$ as a horizontal asymptote?
   \begin{multipleChoice}
-	\choice[correct]{Yes}
-	\choice{No}
+    \choice[correct]{Yes}
+    \choice{No}
   \end{multipleChoice}
 \end{problem}
 
@@ -1012,10 +755,8 @@ If a function $f$ is not defined at $x=a$,
 %\section{Continuity and the Intermediate Value Theorem}
 
 \begin{problem}
-  \recommendation{Elizabeth}
-  \GoodQuestions{Subject: Continuity and the Intermediate Value
-    Theorem 4Q}
-
+  %\recommendation{Elizabeth}
+  %\GoodQuestions{Subject: Continuity and the Intermediate Value Theorem 4Q}
   You know the following statement is true: ``If $f$ is a polynomial
   function, then $f$ is a continuous function.''  Which of the
   following must also be true?
@@ -1028,12 +769,10 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 
-
 \begin{problem}
-  \recommendation{Vic} \GoodQuestions{Subject: Continuity and the
-    Intermediate Value Theorem 7P}
-  \textbf{True} or \textbf{False}. At some time since you were born
-  your weight in pounds equaled your height in inches.
+  %\recommendation{Vic} \GoodQuestions{Subject: Continuity and the
+  %  Intermediate Value Theorem 7P}
+  At some time since you were born, your weight in pounds equaled your height in inches.  Is this true or false?
 \begin{multipleChoice}
   \choice[correct]{True}
   \choice{False}
@@ -1042,40 +781,8 @@ If a function $f$ is not defined at $x=a$,
 
 
 \begin{problem}
-  Suppose $f$ and $g$ are continuous functions.  Let $h(x) = \frac{f(x+0.01) \cdot g(x - 0.01)}{f(x-0.02) \cdot f(x + 0.02)}$.  Without knowing anything else, what number below is the best guess for $h(2)$?
-  \begin{multipleChoice}
-    \choice{$f(2)$}
-    \choice{$g(2)$}
-    \choice{$f(2)/g(2)$}
-    \choice[correct]{$g(2)/f(2)$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-	%Hard to answer without advanced knowledge of sine.
-  Define $f(x) = x \cos x + \sin\left(\frac{x^{10}}{10^{100}}\right)$.  What number below is closest to $f(3)$?
-  \begin{multipleChoice}
-    \choice[correct]{$-3$}
-    \choice{$-1$}
-    \choice{$0$}
-    \choice{$1$}
-    \choice{$3$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-
-	%Seems difficult to rephrase without calculus words.
-%\recommendation{Vic}
-  Suppose $f$ is a function and that $\lim_{h \to 0^{+}} f(h) = \lim_{h \to 0^{-}} f(h)$.  What is true about $f$?
-  \begin{multipleChoice}
-    \choice[correct]{The function $f$ need not be continuous at $0$.}
-    \choice{The function $f$ is continuous at $0$ because the left and right hand limits agree.}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  %\recommendation{Vic} When I zoom in on the graph of $f$ near the
+  %\recommendation{Vic}
+  When I zoom in on the graph of $f$ near the
   point $(a,f(a))$, the zoomed-in graph looks like a straight line.
   When $h$ is very small, how does $f(a)$ compare to $f(a+h)$?
   \begin{multipleChoice}
@@ -1093,26 +800,6 @@ If a function $f$ is not defined at $x=a$,
   \begin{multipleChoice}
     \choice[correct]{$f(a)$ need not be approximately $f(b)$}
     \choice{$f(a)$ must be approximately $f(b)$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Pick two numbers $a$ and $b$ between $0$ and $\pi$ so that
-  $a \approx b$.  Pick a very large integer $N$.  How does $\sin^N a$
-  compare to $\sin^N b$?
-  \begin{multipleChoice}
-    \choice{$\sin^N a$ is very close to $\sin^N b$ because $a \approx b$}
-    \choice[correct]{$\sin^N a$ need not be very close to $\sin^N b$ even though $a \approx b$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Pick two numbers $a$ and $b$ in the interval $[0,1]$ so that
-  $a \approx b$.  Pick a very large integer $N$.  How does $a^N$
-  compare to $b^N$?
-  \begin{multipleChoice}
-    \choice{$a^N$ is very close to $b^N$ because $a \approx b$}
-    \choice[correct]{$a^N$ need not be very close to $b^N$ even though $a \approx b$}
   \end{multipleChoice}
 \end{problem}
 
@@ -1141,27 +828,6 @@ If a function $f$ is not defined at $x=a$,
 %%\clearpage
 
 %\section{An Application of limits}
-
-\begin{problem}
-  What integer is closest to $\frac{\ln 0.26 - \ln 0.25}{0.01}$?
-  \begin{multipleChoice}
-    \choice{$100$}
-    \choice{$25$}
-    \choice{$5$}
-    \choice[correct]{$4$}
-    \choice{$0$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  What integer is closest to $\frac{\ln 1.26 - \ln 1.25}{0.004}$?
-  \begin{multipleChoice}
-    \choice{$3$}
-    \choice[correct]{$2$}
-    \choice{$1$}
-    \choice{$0$}
-  \end{multipleChoice}
-\end{problem}
 
 \begin{problem}
   Suppose $f$ is a differentiable function with $f(0) = 0$.  When $h$
@@ -1195,9 +861,8 @@ If a function $f$ is not defined at $x=a$,
 
 
 \begin{problem}
-  \recommendation{Vic} \GoodQuestions{Subject: Tangents, velocities,
-    and other rates of change 2P}
-  
+  %\recommendation{Vic} \GoodQuestions{Subject: Tangents, velocities,
+  % and other rates of change 2P}
   The line tangent to the graph of $f(x)=x$ at $(0,0)$
   \begin{multipleChoice}
   \choice{is $y=0$}
@@ -1208,15 +873,6 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 
-
-\begin{problem}
-  Let $x = e^{10001} - e^{10000}$ and $y = e^{10002} - e^{10001}$.  How do $x$ and $y$ compare?
-  \begin{multipleChoice}
-    \choice[correct]{$x < y$}
-    \choice{$x = y$}
-    \choice{$x > y$}
-  \end{multipleChoice}
-\end{problem}
 
 \begin{problem}
 %\recommendation{Vic}
@@ -1234,16 +890,6 @@ If a function $f$ is not defined at $x=a$,
     \choice{$A < B$}
     \choice{$A = B$}
     \choice[correct]{$A > B$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Let $x = \log_b 1001 - \log_b 1000$ and $y = \log_b 101 - \log_b 100$.  How do $x$ and $y$ compare?
-  \begin{multipleChoice}
-    \choice[correct]{$x < y$}
-    \choice{$x = y$}
-    \choice{$x > y$}
-    \choice{It depends on the base $b$.}
   \end{multipleChoice}
 \end{problem}
 
@@ -1277,12 +923,11 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  \recommendation{Vic}
-  \GoodQuestions{Subject: Derivatives 2Q}
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Derivatives 2Q}
 
-
-  \textbf{True} or \textbf{False}.  If $f(x)=x^{1/3}$, then there is a
-  tangent line at $(0,0)$.
+  If $f(x)=x^{1/3}$, then there is a
+  tangent line at $(0,0)$.  Is this true or false?
   \begin{multipleChoice}
     \choice[correct]{True}
     \choice{False}
@@ -1290,9 +935,8 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  \recommendation{Vic}
-
-  \GoodQuestions{Subject: Derivatives 7P}
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Derivatives 7P}
   If $f'(a)$ exists, then $\lim_{x\to a}f(x)$
   \begin{multipleChoice}
     \choice{exists, but there is not enough information to
@@ -1305,9 +949,8 @@ If a function $f$ is not defined at $x=a$,
 
 
 \begin{problem}
-  \recommendation{Vic}
-
-  \GoodQuestions{Subject: Derivatives 9Q}
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Derivatives 9Q}
   A slow freight train chugs along a straight track.  The distance it
   has traveled after $x$ hours is given by a function $f(x)$.  An
   engineer is walking along the top of the box cars at the rate of $3$
@@ -1325,12 +968,11 @@ If a function $f$ is not defined at $x=a$,
 
 
 \begin{problem}
-  \recommendation{Elizabeth}
-  
+  %\recommendation{Elizabeth}
   Water is being poured into a semispherical bowl.  Which of the
   following gives the average rate that water is being added to the
   bowl?  Let $V$ stand for volume, $r$ stand for radius, and $t$ stand
-  for time and $\Delta$ indicate ``change in''.
+  for time and $\Delta$ indicate ``change in.''
   \begin{multipleChoice}
     \choice[correct]{$\frac{\Delta V}{\Delta t}$}
     \choice{$\frac{\Delta r}{\Delta t}$}
@@ -1341,11 +983,10 @@ If a function $f$ is not defined at $x=a$,
 
 
 \begin{problem}
-  \recommendation{Vic}
-
-  \GoodQuestions{Subject: Derivative Rules 6P}
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Derivative Rules 6P}
   Gravel is poured into a pile. The rate at which gravel is added to
-  the pile is:
+  the pile is
 \begin{multipleChoice}
   \choice[correct]{$\frac{dV}{dt}$}
   \choice{$\frac{dr}{dt}$}
@@ -1355,13 +996,12 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 
-
 %%\clearpage
 
 %\section{Higher order derivatives and graphs}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   Suppose $f$ and $g$ have the same second derivative at every point.  
   \begin{multipleChoice}
     \choice[correct]{It is possible that $f$ is increasing at $1$ and $g$ is decreasing at $1$.}
@@ -1384,7 +1024,6 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 %%\clearpage
-
 %\section{Rules of differentiation}
 
 \begin{problem}
@@ -1396,7 +1035,7 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   Suppose $p(x) = x^2 + a$ is a quadratic polynomial.  If $a > 0$, is it possible that there is a point $x$ so that $p'(x) = p(x) = 0$?
   \begin{multipleChoice}
     \choice{Yes}
@@ -1433,30 +1072,17 @@ If a function $f$ is not defined at $x=a$,
 
 
 
-\begin{problem}
-  \recommendation{Vic}
-
-  \GoodQuestions{Subject: Derivative Rules 15P}
-  $\lim_{h\to 0}\frac{\sin (2x+h)-\sin (2x)}{h}$ equals
-  \begin{multipleChoice}
-    \choice{$\cos x$}
-    \choice[correct]{$\cos (2x)$}
-    \choice{zero}
-    \choice{does not exist because $0/0$ is not defined}
-  \end{multipleChoice}
-\end{problem}
-
 
 %%\clearpage
 
 %\section{The product and quotient rules}
 
 \begin{problem}
-  \recommendation{Elizabeth}
-  \GoodQuestions{Subject: Derivative Rules 8P}
+  %\recommendation{Elizabeth}
+  %\GoodQuestions{Subject: Derivative Rules 8P}
   Suppose over an interval of time, $\Delta t$, the length, $L$, and
   the width, $W$, of a rectangle grow to $L+\Delta L$ and $W +\Delta
-  W$ respectively as in the sketch below.  
+  W$ respectively as in the sketch below. 
   \begin{image}
     \begin{tikzpicture}
       \coordinate (A) at (0,4);
@@ -1489,7 +1115,6 @@ If a function $f$ is not defined at $x=a$,
     \choice[correct]{$L\frac{\Delta W}{\Delta t} + W\frac{\Delta L}{\Delta t} + \frac{\Delta L \Delta W}{\Delta t}$}
   \end{multipleChoice}
 \end{problem}
-
 
 \begin{problem}
   Suppose $A$ is just a bit bigger than $a$ and $B$ is just a bit
@@ -1537,47 +1162,12 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-  Suppose $f$ and $g$ are differentiable functions and $f(0) = 0$ and
-  $g(0) = 0$ and when $h$ is close to zero, $f(g(h))$ is close to $6h$
-  and $g(g(h))$ is close to $9h$.  What is a good approximation for $f(f(h))$?
-  \begin{multipleChoice}
-    \choice{$f(f(h))$ is close to $2h$}
-    \choice{$f(f(h))$ is close to $3h$}
-    \choice[correct]{$f(f(h))$ is close to $4h$}
-  \end{multipleChoice}
-\end{problem}
 
 \begin{problem}
-  Suppose $f$ is a differentiable function and $f(0) = 0$ and
-  $f(\sin 0.03) = 6$.  What is a best guess for $f(0.01)$?
-  \begin{multipleChoice}
-    \choice[correct]{$2$}
-    \choice{$4$}
-    \choice{$6$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $f$ is a differentiable function and $f(0) = 0$ and
-  $f(\sin \frac{\pi}{100}) = 9$.  What number below is the best guess for $f(0.01)$?
-  \begin{multipleChoice}
-    \choice{$1$}
-    \choice[correct]{$3$}
-    \choice{$4$}
-    \choice{$6$}
-    \choice{$9$}
-  \end{multipleChoice}
-\end{problem}
-
-
-
-\begin{problem}
-  \recommendation{Vic}
-
-  \GoodQuestions{Subject: Derivative Rules 19Q}
+  % \recommendation{Vic}
+  % \GoodQuestions{Subject: Derivative Rules 19Q}
   If $f$ and $g$ are both differentiable and $h=f\circ g$,
-  $h'(2)$ equals
+  then $h'(2)$ equals
   \begin{multipleChoice}
     \choice{$f'(2)\circ g'(2)$}
     \choice{$f'(2)g'(2)$}
@@ -1586,11 +1176,9 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-
 \begin{problem}
-  \recommendation{Vic}
-
-  \GoodQuestions{Subject: Derivative Rules 20P}
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Derivative Rules 20P}
   The area of a circle, $A=\pi r^2$, changes as its radius changes. If
   the radius changes with respect to time, the change in area with
   respect to time is
@@ -1609,7 +1197,7 @@ If a function $f$ is not defined at $x=a$,
 \begin{problem}
   %\recommendation{Elizabeth}
   A car drives 100 miles in one hour on a highway were the speed limit
-  is 80 mph.  What can we say about the car?
+  is 80~mph.  What can we say about the car?
   \begin{multipleChoice}
     \choice{The car was speeding the whole time}
     \choice{The car was speeding more than half the time}
@@ -1620,7 +1208,7 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   Suppose $f$ is a differentiable function with domain consisting of
   the real numbers; further suppose that $f(0) = 0$ and that $f'(x) <
   1$ for all $x$.  What is a possible value for $f(0.9999)$?
@@ -1646,7 +1234,7 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   Suppose $f$ is an increasing function, and $x$ and $h$ are positive numbers between $0$ and $1$.  How does $f(x + h)$ compare to $f(x + h^2)$?
   \begin{multipleChoice}
     \choice[correct]{$f(x+h) > f(f+h^2)$}
@@ -1687,33 +1275,11 @@ If a function $f$ is not defined at $x=a$,
 
 %\section{Linear approximation}
 
-\begin{problem}
-%\recommendation{Vic}
-  Suppose $y = mx + b$ is the equation for a tangent line at the point $(100,\log 100)$ to the graph of $f(x) = \log x$.  How does $200m + b$ compare to $\log 200$?
-  \begin{multipleChoice}
-    \choice[correct]{$200m + b > \log 200$}
-    \choice{$200m + b < \log 200$}
-    \choice{$200m + b = \log 200$}
-  \end{multipleChoice}
-\end{problem}
 
 \begin{problem}
-  Suppose $y = mx + b$ is the equation for a tangent line at the point $(100,e^{100})$ to the graph of $f(x) = e^x$.  How does $200m + b$ compare to $e^{200}$?
-  \begin{multipleChoice}
-    \choice{$200m + b > e^{200}$}
-    \choice[correct]{$200m + b < e^{200}$}
-    \choice{$200m + b = e^{200}$}
-  \end{multipleChoice}
-\end{problem}
-
-
-
-
-\begin{problem}
-  \recommendation{Vic}
-  \GoodQuestions{Subject: Linear approximation 7Q}
-  
-  Peeling an orange changes its volume $V$.  What does $\Delta V$
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Linear approximation 7Q}
+  The volume of an orange is $V$.  Peeling an orange changes its volume.  What does $\Delta V$
   represent?  
   \begin{multipleChoice}
     \choice[correct]{the volume of the rind}
@@ -1776,17 +1342,6 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-  Suppose a polynomial $f$ achieves a global minimum, and besides that
-  one point has no other local or global extrema.  What must be true
-  of $f$?
-  \begin{multipleChoice}
-    \choice{$f'$ is a constant function}
-    \choice{$f''$ is a constant function but it could be either negative or positive}
-    \choice{$f''$ is a constant function and must be positive}
-    \choice[correct]{None of these statements are true.}
-  \end{multipleChoice}
-\end{problem}
 
 %%\clearpage
 
@@ -1851,25 +1406,6 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-  How does $\sin(0.01)$ compare to $\sin(3.14)$?
-  \begin{multipleChoice}
-    \choice{$\sin(0.01) > 0 > \sin(3.14)$}
-    \choice[correct]{$\sin(0.01) > \sin(3.14) > 0$}
-    \choice{$\sin(3.14) > \sin(0.01) > 0$}
-    \choice{$\sin(3.14) > 0 > \sin(0.01)$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Pick a large number $x$ and a number $h$ very close to $0$ so that $0 > \sin x > \sin (x+h)$.  How might $\cos (x+h)$ compare to $\cos x$?
-  \begin{multipleChoice}
-    \choice[correct]{$\cos (x+h) > \cos x$}
-    \choice{$\cos (x+h) = \cos x$}
-    \choice{$\cos (x+h) < \cos x$}
-  \end{multipleChoice}
-\end{problem}
-
 %%\clearpage
 
 %\section{Implicit differentiation}
@@ -1922,15 +1458,6 @@ If a function $f$ is not defined at $x=a$,
 
 %\section{Logarithmic differentiation}
 
-\begin{problem}
-  Consider a positive continuous function $f$ and its logarithmic derivative $g(x) = \frac{f'(x)}{f(x)}$.  Suppose $g(x) = 0.05$ when $0 < x < 10$ and $g(x) = -0.05$ when $10 < x < 20$.  How do $f(0)$ and $f(20)$ compare?
-  \begin{multipleChoice}
-    \choice[correct]{$f(20) > f(0)$}
-    \choice{$f(0) < f(20)$}
-    \choice{$f(0) = f(20)$}
-  \end{multipleChoice}
-\end{problem}
-
 %%\clearpage
 
 %\section{Advanced graphing of functions}
@@ -1959,13 +1486,13 @@ If a function $f$ is not defined at $x=a$,
 %%   Consider the graph of $y = f(x)$ and the graph of $y = f(x)^2$.  How many local minimums appear on these graphs?
 %%   \begin{multipleChoice}
 %%     \choice{These two graphs have the same number of local minimums.}
-%%     \choice{The graph of $y = f(x)^2$ has at least as many local minimums as the graph of $y = f(x)$ and could have more}
-%%     \choice[correct]{The graph of $y = f(x)$ has at least as many local minimums as the graph of $y = f(x)^2$ and could have more}
+%%     \choice[correct]{The graph of $y = f(x)^2$ has at least as many local minimums as the graph of $y = f(x)$ and could have more}
+%%     \choice{The graph of $y = f(x)$ has at least as many local minimums as the graph of $y = f(x)^2$ and could have more}
 %%   \end{multipleChoice}
 %% \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   Consider the graph of $y = f(x)$ and the graph of $y = f(x^2)$.  How many local minimums appear on these graphs?
   \begin{multipleChoice}
     \choice{These two graphs have the same number of local minimums.}
@@ -1985,33 +1512,7 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 %%\clearpage
-
 %\section{More than one rate}
-
-\begin{problem}
-%\recommendation{Vic}
-  Suppose $x, y, z$ are positive quantities which are depend on time
-  $t$.  If $x$ and $y$ are related by the rule $x^2 + y^4 = 1$ and $y$
-  and $z$ are related by the rule $y^2 + z^4 = 1$ and $x$ is
-  increasing, then what is true about $z$?
-  \begin{multipleChoice}
-    \choice[correct]{$z$ must be increasing}
-    \choice{$z$ could be either increasing or decreasing}
-    \choice{$z$ must be decreasing}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $x, y, z$ are positive quantities which are depend on time
-  $t$.  If $x$ and $y$ are related by the rule $\sin x + \sin y = 1$ and $y$
-  and $z$ are related by the rule $\cos y + \cos z = 1$ and $x$ is
-  increasing, then what is true about $z$?
-  \begin{multipleChoice}
-    \choice{$z$ must be increasing}
-    \choice[correct]{$z$ could be either increasing or decreasing}
-    \choice{$z$ must be decreasing}
-  \end{multipleChoice}
-\end{problem}
 
 \begin{problem}
   Suppose $x, y, z$ are positive quantities which are depend on time
@@ -2030,7 +1531,7 @@ If a function $f$ is not defined at $x=a$,
 %\section{Applied related rates}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   A weight is dropped from the top of a building.  Ignoring air
   resistance, when the weight is halfway between the top of the
   building and the ground, it is travelling at $v$ m/s.  Just before
@@ -2047,15 +1548,6 @@ If a function $f$ is not defined at $x=a$,
 %\section{Differential equations}
 
 \begin{problem}
-  Suppose $f''(x) = f'(x) + f(x)$.  If $f'(1) = 0$ and $f(1) = 2$, what is true about $f$?
-  \begin{multipleChoice}
-    \choice[correct]{$f$ has a local minimum at the point $1$}
-    \choice{$f$ has a local maximum at the point $1$}
-    \choice{$f$ has an inflection point at $1$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
   Suppose the slope of a tangent line to the graph of $f$ at the point $x$ is $x \cdot f(x)$ and suppose $f(0) = 1$.  What must be true of $f$?
   \begin{multipleChoice}
     \choice[correct]{By choosing $x$ large enough, $f(x)$ can be made as large as desired}
@@ -2068,27 +1560,6 @@ If a function $f$ is not defined at $x=a$,
 
 %\section{Antiderivatives}
 
-\begin{problem}
-%\recommendation{Vic}
-  Suppose $f$ and $g$ are two functions with the same derivative at every point.  What quantity below is the best guess for the value of $g(0.998)$?
-  \begin{multipleChoice}
-    \choice{$g(1) + f(1.02) - f(1)$}
-    \choice{$g(1) + f(1) - f(1.02)$}
-    \choice[correct]{$g(1) + 2\, f(1) - 2\, f(1.001)$}
-    \choice{$g(1) + 2\, f(1.001) - 2\, f(1)$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $f$ is a function (with domain consisting of nonzero real numbers) so that $f'(x) = 1/x$.  What must be true of $f$?
-  \begin{multipleChoice}
-    \choice{$f(x) = \ln x$}
-    \choice{$f(x) = \ln |x|$}
-    \choice{There is a number $C$ (possibly zero) so that $f(x) = C + \ln x$}
-    \choice{There is a number $C$ (possibly zero) so that $f(x) = C + \ln |x|$}
-    \choice[correct]{$\frac{d}{dx} \left( f(x) - \ln |x| \right) = 0$}
-  \end{multipleChoice}
-\end{problem}
 
 %%\clearpage
 
@@ -2158,22 +1629,6 @@ If a function $f$ is not defined at $x=a$,
 %% \end{problem}
 
 
-
-%%\clearpage
-
-%\section{Approximating the area under a curve}
-
-\begin{problem}
-  Consider a rectangle $R$ which is $2 \times 1$ and a square $S$
-  which is $\sqrt{2} \times \sqrt{2}$.  What is true about $R$ and
-  $S$?
-  \begin{multipleChoice}
-    \choice[correct]{The square $S$ can be cut up into pieces and rearranged to form $R$.}
-    \choice{Because $\sqrt{2}$ is irrational, it is not possible to cut $S$ into pieces to form $R$.}
-    \choice{Because integration involves a limit, it is not possible to cut $S$ into pieces to form $R$.}
-  \end{multipleChoice}
-\end{problem}
-
 \begin{problem}
   Suppose $\int_0^2 f(x) \, dx$ is positive.  What can we say about $f(1)$?
   \begin{multipleChoice}
@@ -2183,12 +1638,10 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-%%\clearpage
-
 %\section{Net area}
 
 \begin{problem}
-%\recommendation{Vic}
+  % \recommendation{Vic}
   Suppose $f$ is a negative and continuous function.  Define $F(x) = \int_x^0 f(t) \, dt$.  What can be said about $F$?
   \begin{multipleChoice}
     \choice[correct]{$F$ is an increasing function}
@@ -2233,26 +1686,6 @@ If a function $f$ is not defined at $x=a$,
 %\section{The definite integral}
 
 \begin{problem}
-  For a certain nonnegative and continuous function $f$ it is the case
-  that $f(a) = f(b) = 0$.  Then $\int_a^b f(x) \, dx$ represents the
-  area under the graph of $f$ and above the $x$-axis.  How does $A = \int_a^b f(x) \, dx$ compare to $B = \int_a^b f(x)^2 \, dx$?
-  \begin{multipleChoice}
-    \choice{$A \leq B$}
-    \choice{$A \geq B$}
-    \choice[correct]{$A$ could be larger or smaller than $B$ depending on the function $f$.}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  How does $A = \int_0^1 \sin \sin x \, dx$ compare to $B = \int_0^1 \sin^2 \sin x \, dx$?
-  \begin{multipleChoice}
-    \choice{$A < B$}
-    \choice{$A = B$}
-    \choice[correct]{$A > B$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
   Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 1/4$ then $f(x) < g(x)$.  When $x > 1/4$ then $f(x) > g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
   \begin{multipleChoice}
     \choice{The average value of $f$ is smaller than the average value of $g$}
@@ -2262,72 +1695,10 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-%\recommendation{Vic}
-  Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 1/2$ then $f(x) \geq \frac{1}{2} g(x)$.  When $x > 1/2$ then $f(x) \geq 2 g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
-  \begin{multipleChoice}
-    \choice{The average value of $f$ is smaller than (and cannot equal) the average value of $g$}
-    \choice{The average value of $f$ is smaller than or equal to the average value of $g$}
-    \choice{The average value of $f$ could be equal to or larger than the average value of $g$}
-    \choice[correct]{The average value of $f$ is larger than (and cannot equal) the average value of $g$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 2/3$ then $f(x) \geq \frac{1}{2} g(x)$.  When $x > 2/3$ then $f(x) \geq 2 g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
-  \begin{multipleChoice}
-    \choice{The average value of $f$ is smaller than (and cannot equal) the average value of $g$}
-    \choice{The average value of $f$ is smaller than or equal to the average value of $g$}
-    \choice[correct]{The average value of $f$ could be equal to or larger than the average value of $g$}
-    \choice{The average value of $f$ is larger than (and cannot equal) the average value of $g$}
-  \end{multipleChoice}
-\end{problem}
-
 %%\clearpage
 
 %\section{Fundamental Theorem of Calculus}
 
-\begin{problem}
-  Suppose $f(a)$ is the area of the region bounded by $x^2 + y^2 \leq 25$ and $-5 \leq x \leq a$.  What integer is closest to $\frac{f(4.01) - f(4)}{0.01}$?
-  \begin{multipleChoice}
-    \choice{3}
-    \choice{4}
-    \choice{5}
-    \choice[correct]{6}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-%\recommendation{Vic}
-  Suppose $f(a)$ is the area of the region bounded by $0 \leq y \leq x^2$ and $0 \leq x \leq a$.  What integer is closest to $\frac{f(3.01) - f(2.99)}{0.01}$?
-  \begin{multipleChoice}
-    \choice{3}
-    \choice{9}
-    \choice{12}
-    \choice[correct]{18}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-%\recommendation{Vic}
-  Suppose $f(x) = \int_0^x \left( mt + b \right) \, dt$.  What is $f^{(3)}(m)$?
-  \begin{multipleChoice}
-    \choice[correct]{$0$}
-    \choice{$b$}
-    \choice{$m^2 + b$}
-    \choice{$m^2 + b$}
-    \choice{$\frac{1}{2} \, m^3 + b \, m$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $f(x) = \int_0^x e^{t^2} \, dt$.  How many local extrema does $f$ have?
-  \begin{multipleChoice}
-    \choice[correct]{$0$}
-    \choice{$1$}
-    \choice{Infinitely many}
-  \end{multipleChoice}
-\end{problem}
 
 %%\clearpage
 
@@ -2373,15 +1744,7 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-  When $n$ is a large integer, what can be said about $\int_0^{n \pi} \cos \sin x \, dx$.
-  \begin{multipleChoice}
-    \choice[correct]{It is large.}
-    \choice{It is close to zero but not exactly zero.}
-    \choice{It is exactly zero.}
-    \choice{It is very negative.}
-  \end{multipleChoice}
-\end{problem}
+
 
 \begin{problem}
   When $n$ is a large integer, what can be said about $\int_0^{n \pi} \sin x \, dx$.
@@ -2393,18 +1756,10 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
+
 %%\clearpage
 
 %\section{Working with substitution}
-
-\begin{problem}
-  Suppose $f$ is a continuous function.  For positive $a$, define $g$ by the rule $g(a) = \int_0^a f(x/a) \, dx$.
-  \begin{multipleChoice}
-    \choice[correct]{$g(2)$ is twice $g(1)$}
-    \choice{$g(2)$ is the same as $g(1)$}
-    \choice{$g(2)$ is half as big as $g(1)$}
-  \end{multipleChoice}
-\end{problem}
 
 \begin{problem}
   Suppose $f$ is a continuous and positive function.  What is the largest quantity?
@@ -2418,6 +1773,710 @@ If a function $f$ is not defined at $x=a$,
 
 
 %\section{Some numerical reasoning questions}
+
+%\section{More questions from Vic}
+
+\begin{problem}
+  Suppose the domain of $f$ is all real numbers, and $f'$ exists and is continuous, and $f'$ is negative.  What can one say about $f$?
+  \begin{multipleChoice}
+    \choice[correct]{The function $f$ is one-to-one.}
+    \choice{The function $f$ is not necessarily one-to-one.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Consider the function $f(x) = e^x - x$.  What must be true about $f$?
+  \begin{multipleChoice}
+    \choice[correct]{$f(x) \geq 1$ for all $x$}
+    \choice{$f(x) \leq 1$ for all $x$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $W(t)$ is the weight of a person at $t$ years of age.  What does $\int_{18}^{19} W'(t) \, dt = 15$ mean?
+  \begin{multipleChoice}
+    \choice[correct]{First year students gain 15 pounds.}
+    \choice{First year students lose 15 pounds.}
+  \end{multipleChoice}
+\end{problem}
+
+% \begin{problem}
+%   \BADBAD Something about knowing the graph of a function given the graph of
+%   its antiderivative or derivative. (e.g., putting the graphs of two
+%   derivatives and asking for a conclusion about the original
+%   functions- maybe in a story context).
+%   \begin{multipleChoice}
+%     \choice[correct]{You're right!}
+%   \end{multipleChoice}
+% \end{problem}
+
+
+% \begin{problem}
+%   \BADBAD One of the problems with, say, product rule: Given the
+%   graphs of f and g, compute the slope of fg at x = 2.
+%   \begin{multipleChoice}
+%     \choice[correct]{You're right!}
+%   \end{multipleChoice}
+% \end{problem}
+
+\begin{problem}
+ The function $f(x)=\sin(x)$ can be approximated by the function $g(x)=x$ when $x$ is close enough to zero.  Which of the following is true?
+\begin{multipleChoice}
+\choice{$\sin(0.005) = 0.005$}
+\choice[correct]{$sin(0.005)$ is approximately 0.005}
+\choice{$g(x)$ is the best straight-line approximation of $f(x)$ for any value of $x$}
+\choice{None of the above}
+\end{multipleChoice}
+\end{problem}
+
+\end{shuffle} 
+
+\hrule
+
+\section{Some harder problems}
+
+\begin{shuffle}
+
+\begin{problem}
+  %\recommendation{Elizabeth}
+  Suppose $f(t) = t-6$ from $0 \leq t \leq 12$ gives the rate of
+  change of the profits for a company over the last year where $t$ is
+  measured in months.  What can you say about the company?
+  \begin{multipleChoice}
+    \choice{The company is profitable}
+    \choice[correct]{Overall, the company hasn't made money this past year}
+    \choice{The company's profits were decreasing but now they are increasing}
+    \choice{None of the above}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Four numbers $A$, $B$, $C$, and $D$ are shown below on a number line.
+  \begin{image}
+  \begin{tikzpicture}[x=0.09\textwidth]
+    \draw[-{>[scale=1.75]}] (-0.4\textwidth,0) -- (0.4\textwidth,0);
+    \foreach \x in {-4,...,4} {%
+      \draw (\x,-.1) -- (\x,.1);
+      \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
+    }
+    \draw (-3.9,0) node [circle,fill,inner sep=1pt,label=above:$A$](e){};
+    \draw (-3.5,0) node [circle,fill,inner sep=1pt,label=above:$B$](e){};
+    \draw (0.5,0) node [circle,fill,inner sep=1pt,label=above:$C$](e){};
+    \draw (3.6,0) node [circle,fill,inner sep=1pt,label=above:$D$](e){};
+  \end{tikzpicture}
+  \end{image}
+  Which is closest to the average of $A$, $B$, $C$, $D$?
+  \begin{multipleChoice}
+    \choice{$A$}
+    \choice{$B$}
+    \choice[correct]{$C$}
+    \choice{$D$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Four equally spaced numbers are shown below on a number line.
+  \begin{image}
+    \begin{tikzpicture}[x=0.19\textwidth]
+      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
+      \foreach \x in {0,...,4} {%
+        \draw (\x,-.1) -- (\x,.1);
+        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
+      }
+      \draw (0.5,0) node [circle,fill,inner sep=1pt,label=above:$a$](e){};
+      \draw (1.5,0) node [circle,fill,inner sep=1pt,label=above:$b$](e){};
+      \draw (2.5,0) node [circle,fill,inner sep=1pt,label=above:$c$](e){};
+      \draw (3.5,0) node [circle,fill,inner sep=1pt,label=above:$d$](e){};
+    \end{tikzpicture}
+  \end{image}
+  Let $f(x) = \ln x$ and consider $f(a)$ and $f(b)$ and $f(c)$ and $f(d)$.  Which pair of numbers is farthest apart?
+  \begin{multipleChoice}
+    \choice[correct]{$f(a)$ and $f(b)$}
+    \choice{$f(b)$ and $f(c)$}
+    \choice{$f(c)$ and $f(d)$}
+    \choice{These pairs are all equally far apart}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  Two pairs of numbers are shown below.
+  \begin{image}
+    \begin{tikzpicture}[x=0.19\textwidth]
+      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
+      \foreach \x in {0,...,4} {%
+        \draw (\x,-.1) -- (\x,.1);
+        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
+      }
+      \draw (0.25,0) node [circle,fill,inner sep=1pt,label=above:$s$](e){};
+      \draw (1.25,0) node [circle,fill,inner sep=1pt,label=above:$s+h$](e){};
+      \draw (2.75,0) node [circle,fill,inner sep=1pt,label=above:$t$](e){};
+      \draw (3.75,0) node [circle,fill,inner sep=1pt,label=above:$t+h$](e){};
+    \end{tikzpicture}
+  \end{image}
+  Let $f(x) = x^3$.  How does $f(s+h)-f(s)$ compare with $f(t+h) - f(t)$?
+  \begin{multipleChoice}
+    \choice[correct]{$f(s+h) - f(s) < f(t+h) - f(t)$}
+    \choice{$f(s+h) - f(s) = f(t+h) - f(t)$}
+    \choice{$f(s+h) - f(s) > f(t+h) - f(t)$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Two pairs of numbers are shown below.
+  \begin{image}
+    \begin{tikzpicture}[x=0.19\textwidth]
+      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
+      \foreach \x in {0,...,4} {%
+        \draw (\x,-.1) -- (\x,.1);
+        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
+      }
+      \draw (0.25,0) node [circle,fill,inner sep=1pt,label=above:$s$](e){};
+      \draw (1.25,0) node [circle,fill,inner sep=1pt,label=above:$s+h$](e){};
+      \draw (2.75,0) node [circle,fill,inner sep=1pt,label=above:$t$](e){};
+      \draw (3.75,0) node [circle,fill,inner sep=1pt,label=above:$t+h$](e){};
+    \end{tikzpicture}
+  \end{image}
+  Let $f(x) = -1/x$.  How does $f(s+h)-f(s)$ compare with $f(t+h) - f(t)$?
+  \begin{multipleChoice}
+    \choice{$f(s+h) - f(s) < f(t+h) - f(t)$}
+    \choice{$f(s+h) - f(s) = f(t+h) - f(t)$}
+    \choice[correct]{$f(s+h) - f(s) > f(t+h) - f(t)$}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  Two pairs of numbers are shown below.
+  \begin{image}
+    \begin{tikzpicture}[x=0.19\textwidth]
+      \draw[-{>[scale=1.75]}] (-0.05\textwidth,0) -- (0.8\textwidth,0);
+      \foreach \x in {0,...,4} {%
+        \draw (\x,-.1) -- (\x,.1);
+        \node[anchor=north,yshift=-2pt] at (\x,0) {$\x$};
+      }
+      \draw (3.141592654,-.1) -- (3.141592654,.1);
+      \node[anchor=north,yshift=-2pt] at (3.141592654,0) {$\pi$};
+      \draw (0.25,0) node [circle,fill,inner sep=1pt,label=above:$s$](e){};
+      \draw (0.65,0) node [circle,fill,inner sep=1pt,label=above:$s+h$](e){};
+      \draw (3.19,0) node [circle,fill,inner sep=1pt,label=above:$t$](e){};
+      \draw (3.59,0) node [circle,fill,inner sep=1pt,label=above:$t+h$](e){};
+    \end{tikzpicture}
+  \end{image}
+  Let $f(x) = \sin x$.  How does $f(s+h)-f(s)$ compare with $f(t+h) - f(t)$?
+  \begin{multipleChoice}
+    \choice{$f(s+h) - f(s) < f(t+h) - f(t)$}
+    \choice{$f(s+h) - f(s) = f(t+h) - f(t)$}
+    \choice[correct]{$f(s+h) - f(s) > f(t+h) - f(t)$}
+  \end{multipleChoice}
+\end{problem}
+
+
+
+\begin{problem}
+  % BADBAD draw this on a number line
+  Suppose $x$ is close to $0$ and $y$ is close to $-2$ and $z$ is close to $2$.  What is true about these numbers?
+  \begin{multipleChoice}
+    \choice{$y/x < z/x$}
+    \choice[correct]{$y/x^4 < z/x^2$}
+    \choice{$y/x^5 < z/x^3$}
+    \choice{$y/x^5 < z/x^5$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+	%This problem would be a real stretch for someone who has not seen limits, or the derivative, already.
+  Suppose $x$ is $0.000001$ and $y = 10$ and $z = 9$.  Which is larger:
+  $A = \frac{\sin (yx)}{zx}$ or $B = \frac{\sin (zx)}{yx}$?
+  \begin{multipleChoice}
+    \choice[correct]{$A$ is larger than $B$.}
+    \choice{$B$ is larger than $A$.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+	%This problem would be a real stretch for someone who has not seen limits, or the derivative, already.
+  Suppose $x$ is $0.00\dots 0017$ with $10^{17}$ zeroes after the
+  decimal point, and suppose $y$ and $z$ are large positive integers
+  with $y > z$.  Which is larger: $A = \frac{\sin (yx)}{zx}$ or
+  $B = \frac{\sin (zx)}{yx}$?
+  \begin{multipleChoice}
+    \choice[correct]{$A$ is larger than $B$.}
+    \choice{$B$ is larger than $A$.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Pick some positive real number; add one; take its square root, and
+  then add one and take the square root of that, and then add one and
+  again take the square root of that, and so on---thousands and
+  thousands of times.  Call the result $x$.  What do you expect to be
+  true of $x$?
+  \begin{multipleChoice}
+    \choice{The number $x$ is close to $0$.}
+    \choice{The number $x$ is close to $1$.}
+    \choice[correct]{The number $x$ is between $1$ and $2$.}
+    \choice{The number $x$ is very large.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  % "This seems difficult without advanced knowledge of sine."  I agree, but I really intend students to make the less than careful observation that \(sin x \approx x\) when \(x\) is close to zero, and so the \(\frac{\sin \sin x}{x}\) is about \(x/x = 1\).  The point of including $\pi^{-1000}$ is to see if students believe $\sin \pi = 0$ means $\sin \pi^{-1000} = 0$.
+  When $x = \pi^{-1000}$, what number below is closest to $\frac{\sin \sin x}{x}$?
+  \begin{multipleChoice}
+    \choice{$-1$}
+    \choice{$0$}
+    \choice[correct]{$1$}
+    \choice{This quantity is undefined}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $A$ and $a$ differ by at most $2$ and suppose $B$ and $b$
+  differ by at most $1$.  In symbols, this means that $|A - a| < 2$ and $|B - b| < 1$.
+  By how much could $A/B$ and $a/b$ differ?
+  \begin{multipleChoice}
+    \choice{By no more than $1$, meaning $|A/B - a/b| < 1$}
+    \choice{By no more than $2$, meaning $|A/B - a/b| < 2$}
+    \choice{By no more than a factor of $2$, meaning $\left| \frac{A/B}{a/b} \right| < 2$}
+    \choice{By no more than a factor of $1/2$, meaning $\left| \frac{A/B}{a/b} \right| < \frac{1}{2}$}
+    \choice[correct]{By any amount}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  % \recommendation{Vic}
+  % Difficult without advanced sine knowledge
+  Suppose $x = 3 \cdot 10^{-1000}$ and $y = 6 \cdot 10^{-1000}$.  What is the best guess for $\frac{\sin (xy)}{x^2}$?
+  \begin{multipleChoice}
+    \choice{$0$}
+    \choice{$1$}
+    \choice[correct]{$2$}
+    \choice{$3$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  % Difficult without advanced sine knowledge
+  Suppose $x = 5 \cdot 10^{-1000}$ and $y = 2 \cdot 10^{-999}$.  What is the best guess for $\frac{\sin (xy)}{x^2}$?
+  \begin{multipleChoice}
+    \choice{$0$}
+    \choice{$1$}
+    \choice{$2$}
+    \choice{$3$}
+    \choice[correct]{$4$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  By choosing $x$ appropriately, how small can $f(x) = \frac{1}{\sin (x^2)}$ be?
+  \begin{multipleChoice}
+    \choice{The quantity $f(x)$ cannot be negative}
+    \choice{The quantity $f(x)$ must be larger than $-1$ but can take negative values}
+    \choice[correct]{The quantity $f(x)$ can be made as negative as desired}
+  \end{multipleChoice}
+\end{problem}
+
+
+
+\begin{problem}
+  For a certain function $f$ with domain consisting of all real
+  numbers, it is the case that $f(x) < 0$ and yet $f$ is increasing.
+  What must be true of $f$?
+  \begin{multipleChoice}
+    \choice{The graph of $f$ has a horizontal asymptote at $y = 0$}
+    \choice{When $x$ is very negative, $f(x)$ is also very negative}
+    \choice{The graph of $f$ has a horizontal asymptote at $y=N$ for some negative number $N$}
+    \choice[correct]{None of these statements need be true}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ is a function with the following properties:
+  \begin{itemize}
+  \item $f(x) > 0$,
+  \item when $x$ is very large, $f(x)$ is close to $0$, and
+  \item when $x$ is close to zero, $f(x)$ is close to $1$.
+  \end{itemize}
+  When $x$ is a small positive number, what do you expect to be true about $1/f(1/x)$?
+  \begin{multipleChoice}
+    \choice{It is very negative}
+    \choice{It is close to $-1$}
+    \choice{It is close to $0$}
+    \choice{It is close to $1$}
+    \choice[correct]{It is very large}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ and $g$ are continuous functions.  Let $h(x) = \frac{f(x+0.01) \cdot g(x - 0.01)}{f(x-0.02) \cdot f(x + 0.02)}$.  Without knowing anything else, what number below is the best guess for $h(2)$?
+  \begin{multipleChoice}
+    \choice{$f(2)$}
+    \choice{$g(2)$}
+    \choice{$f(2)/g(2)$}
+    \choice[correct]{$g(2)/f(2)$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+	%Hard to answer without advanced knowledge of sine.
+  Define $f(x) = x \cos x + \sin\left(\frac{x^{10}}{10^{100}}\right)$.  What number below is closest to $f(3)$?
+  \begin{multipleChoice}
+    \choice[correct]{$-3$}
+    \choice{$-1$}
+    \choice{$0$}
+    \choice{$1$}
+    \choice{$3$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+
+	%Seems difficult to rephrase without calculus words.
+%\recommendation{Vic}
+  Suppose $f$ is a function and that $\lim_{h \to 0^{+}} f(h) = \lim_{h \to 0^{-}} f(h)$.  What is true about $f$?
+  \begin{multipleChoice}
+    \choice[correct]{The function $f$ need not be continuous at $0$.}
+    \choice{The function $f$ is continuous at $0$ because the left and right hand limits agree.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Pick two numbers $a$ and $b$ between $0$ and $\pi$ so that
+  $a \approx b$.  Pick a very large integer $N$.  How does $\sin^N a$
+  compare to $\sin^N b$?
+  \begin{multipleChoice}
+    \choice{$\sin^N a$ is very close to $\sin^N b$ because $a \approx b$}
+    \choice[correct]{$\sin^N a$ need not be very close to $\sin^N b$ even though $a \approx b$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Pick two numbers $a$ and $b$ in the interval $[0,1]$ so that
+  $a \approx b$.  Pick a very large integer $N$.  How does $a^N$
+  compare to $b^N$?
+  \begin{multipleChoice}
+    \choice{$a^N$ is very close to $b^N$ because $a \approx b$}
+    \choice[correct]{$a^N$ need not be very close to $b^N$ even though $a \approx b$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  What integer is closest to $\frac{\ln 0.26 - \ln 0.25}{0.01}$?
+  \begin{multipleChoice}
+    \choice{$100$}
+    \choice{$25$}
+    \choice{$5$}
+    \choice[correct]{$4$}
+    \choice{$0$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  What integer is closest to $\frac{\ln 1.26 - \ln 1.25}{0.004}$?
+  \begin{multipleChoice}
+    \choice{$3$}
+    \choice[correct]{$2$}
+    \choice{$1$}
+    \choice{$0$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Let $x = e^{10001} - e^{10000}$ and $y = e^{10002} - e^{10001}$.  How do $x$ and $y$ compare?
+  \begin{multipleChoice}
+    \choice[correct]{$x < y$}
+    \choice{$x = y$}
+    \choice{$x > y$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Let $x = \log_b 1001 - \log_b 1000$ and $y = \log_b 101 - \log_b 100$.  How do $x$ and $y$ compare?
+  \begin{multipleChoice}
+    \choice[correct]{$x < y$}
+    \choice{$x = y$}
+    \choice{$x > y$}
+    \choice{It depends on the base $b$.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  %\recommendation{Vic}
+  %\GoodQuestions{Subject: Derivative Rules 15P}
+  The expression $\lim_{h\to 0}\frac{\sin (2x+h)-\sin (2x)}{h}$ equals
+  \begin{multipleChoice}
+    \choice{$\cos x$}
+    \choice[correct]{$\cos (2x)$}
+    \choice{zero}
+    \choice{does not exist because $0/0$ is not defined}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ and $g$ are differentiable functions and $f(0) = 0$ and
+  $g(0) = 0$ and when $h$ is close to zero, $f(g(h))$ is close to $6h$
+  and $g(g(h))$ is close to $9h$.  What is a good approximation for $f(f(h))$?
+  \begin{multipleChoice}
+    \choice{$f(f(h))$ is close to $2h$}
+    \choice{$f(f(h))$ is close to $3h$}
+    \choice[correct]{$f(f(h))$ is close to $4h$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ is a differentiable function and $f(0) = 0$ and
+  $f(\sin 0.03) = 6$.  What is a best guess for $f(0.01)$?
+  \begin{multipleChoice}
+    \choice[correct]{$2$}
+    \choice{$4$}
+    \choice{$6$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ is a differentiable function and $f(0) = 0$ and
+  $f(\sin \frac{\pi}{100}) = 9$.  What number below is the best guess for $f(0.01)$?
+  \begin{multipleChoice}
+    \choice{$1$}
+    \choice[correct]{$3$}
+    \choice{$4$}
+    \choice{$6$}
+    \choice{$9$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+%\recommendation{Vic}
+  Suppose $y = mx + b$ is the equation for a tangent line at the point $(100,\log 100)$ to the graph of $f(x) = \log x$.  How does $200m + b$ compare to $\log 200$?
+  \begin{multipleChoice}
+    \choice[correct]{$200m + b > \log 200$}
+    \choice{$200m + b < \log 200$}
+    \choice{$200m + b = \log 200$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $y = mx + b$ is the equation for a tangent line at the point $(100,e^{100})$ to the graph of $f(x) = e^x$.  How does $200m + b$ compare to $e^{200}$?
+  \begin{multipleChoice}
+    \choice{$200m + b > e^{200}$}
+    \choice[correct]{$200m + b < e^{200}$}
+    \choice{$200m + b = e^{200}$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose a polynomial $f$ achieves a global minimum, and besides that
+  one point has no other local or global extrema.  What must be true
+  of $f$?
+  \begin{multipleChoice}
+    \choice{$f'$ is a constant function}
+    \choice{$f''$ is a constant function but it could be either negative or positive}
+    \choice{$f''$ is a constant function and must be positive}
+    \choice[correct]{None of these statements are true.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  How does $\sin(0.01)$ compare to $\sin(3.14)$?
+  \begin{multipleChoice}
+    \choice{$\sin(0.01) > 0 > \sin(3.14)$}
+    \choice[correct]{$\sin(0.01) > \sin(3.14) > 0$}
+    \choice{$\sin(3.14) > \sin(0.01) > 0$}
+    \choice{$\sin(3.14) > 0 > \sin(0.01)$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Pick a large number $x$ and a number $h$ very close to $0$ so that $0 > \sin x > \sin (x+h)$.  How might $\cos (x+h)$ compare to $\cos x$?
+  \begin{multipleChoice}
+    \choice[correct]{$\cos (x+h) > \cos x$}
+    \choice{$\cos (x+h) = \cos x$}
+    \choice{$\cos (x+h) < \cos x$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Consider a positive continuous function $f$ and its logarithmic derivative $g(x) = \frac{f'(x)}{f(x)}$.  Suppose $g(x) = 0.05$ when $0 < x < 10$ and $g(x) = -0.05$ when $10 < x < 20$.  How do $f(0)$ and $f(20)$ compare?
+  \begin{multipleChoice}
+    \choice[correct]{$f(20) > f(0)$}
+    \choice{$f(0) < f(20)$}
+    \choice{$f(0) = f(20)$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  % \recommendation{Vic}
+  Suppose $x, y, z$ are positive quantities which are depend on time
+  $t$.  If $x$ and $y$ are related by the rule $x^2 + y^4 = 1$ and $y$
+  and $z$ are related by the rule $y^2 + z^4 = 1$ and $x$ is
+  increasing, then what is true about $z$?
+  \begin{multipleChoice}
+    \choice[correct]{$z$ must be increasing}
+    \choice{$z$ could be either increasing or decreasing}
+    \choice{$z$ must be decreasing}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $x, y, z$ are positive quantities which are depend on time
+  $t$.  If $x$ and $y$ are related by the rule $\sin x + \sin y = 1$ and $y$
+  and $z$ are related by the rule $\cos y + \cos z = 1$ and $x$ is
+  increasing, then what is true about $z$?
+  \begin{multipleChoice}
+    \choice{$z$ must be increasing}
+    \choice[correct]{$z$ could be either increasing or decreasing}
+    \choice{$z$ must be decreasing}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f''(x) = f'(x) + f(x)$.  If $f'(1) = 0$ and $f(1) = 2$, what is true about $f$?
+  \begin{multipleChoice}
+    \choice[correct]{$f$ has a local minimum at the point $1$}
+    \choice{$f$ has a local maximum at the point $1$}
+    \choice{$f$ has an inflection point at $1$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+%\recommendation{Vic}
+  Suppose $f$ and $g$ are two functions with the same derivative at every point.  What quantity below is the best guess for the value of $g(0.998)$?
+  \begin{multipleChoice}
+    \choice{$g(1) + f(1.02) - f(1)$}
+    \choice{$g(1) + f(1) - f(1.02)$}
+    \choice[correct]{$g(1) + 2\, f(1) - 2\, f(1.001)$}
+    \choice{$g(1) + 2\, f(1.001) - 2\, f(1)$}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  Suppose $f$ is a function (with domain consisting of nonzero real numbers) so that $f'(x) = 1/x$.  What must be true of $f$?
+  \begin{multipleChoice}
+    \choice{$f(x) = \ln x$}
+    \choice{$f(x) = \ln |x|$}
+    \choice{There is a number $C$ (possibly zero) so that $f(x) = C + \ln x$}
+    \choice{There is a number $C$ (possibly zero) so that $f(x) = C + \ln |x|$}
+    \choice[correct]{$\frac{d}{dx} \left( f(x) - \ln |x| \right) = 0$}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  Consider a rectangle $R$ which is $2 \times 1$ and a square $S$
+  which is $\sqrt{2} \times \sqrt{2}$.  What is true about $R$ and
+  $S$?
+  \begin{multipleChoice}
+    \choice[correct]{The square $S$ can be cut up into pieces and rearranged to form $R$.}
+    \choice{Because $\sqrt{2}$ is irrational, it is not possible to cut $S$ into pieces to form $R$.}
+    \choice{Because integration involves a limit, it is not possible to cut $S$ into pieces to form $R$.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  For a certain nonnegative and continuous function $f$ it is the case
+  that $f(a) = f(b) = 0$.  Then $\int_a^b f(x) \, dx$ represents the
+  area under the graph of $f$ and above the $x$-axis.  How does $A = \int_a^b f(x) \, dx$ compare to $B = \int_a^b f(x)^2 \, dx$?
+  \begin{multipleChoice}
+    \choice{$A \leq B$}
+    \choice{$A \geq B$}
+    \choice[correct]{$A$ could be larger or smaller than $B$ depending on the function $f$.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  How does $A = \int_0^1 \sin \sin x \, dx$ compare to $B = \int_0^1 \sin^2 \sin x \, dx$?
+  \begin{multipleChoice}
+    \choice{$A < B$}
+    \choice{$A = B$}
+    \choice[correct]{$A > B$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+%\recommendation{Vic}
+  Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 1/2$ then $f(x) \geq \frac{1}{2} g(x)$.  When $x > 1/2$ then $f(x) \geq 2 g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
+  \begin{multipleChoice}
+    \choice{The average value of $f$ is smaller than (and cannot equal) the average value of $g$}
+    \choice{The average value of $f$ is smaller than or equal to the average value of $g$}
+    \choice{The average value of $f$ could be equal to or larger than the average value of $g$}
+    \choice[correct]{The average value of $f$ is larger than (and cannot equal) the average value of $g$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 2/3$ then $f(x) \geq \frac{1}{2} g(x)$.  When $x > 2/3$ then $f(x) \geq 2 g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
+  \begin{multipleChoice}
+    \choice{The average value of $f$ is smaller than (and cannot equal) the average value of $g$}
+    \choice{The average value of $f$ is smaller than or equal to the average value of $g$}
+    \choice[correct]{The average value of $f$ could be equal to or larger than the average value of $g$}
+    \choice{The average value of $f$ is larger than (and cannot equal) the average value of $g$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f(a)$ is the area of the region bounded by $x^2 + y^2 \leq 25$ and $-5 \leq x \leq a$.  What integer is closest to $\frac{f(4.01) - f(4)}{0.01}$?
+  \begin{multipleChoice}
+    \choice{3}
+    \choice{4}
+    \choice{5}
+    \choice[correct]{6}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+%\recommendation{Vic}
+  Suppose $f(a)$ is the area of the region bounded by $0 \leq y \leq x^2$ and $0 \leq x \leq a$.  What integer is closest to $\frac{f(3.01) - f(2.99)}{0.01}$?
+  \begin{multipleChoice}
+    \choice{3}
+    \choice{9}
+    \choice{12}
+    \choice[correct]{18}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+%\recommendation{Vic}
+  Suppose $f(x) = \int_0^x \left( mt + b \right) \, dt$.  What is $f^{(3)}(m)$?
+  \begin{multipleChoice}
+    \choice[correct]{$0$}
+    \choice{$b$}
+    \choice{$m^2 + b$}
+    \choice{$m^2 + b$}
+    \choice{$\frac{1}{2} \, m^3 + b \, m$}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  Suppose $f(x) = \int_0^x e^{t^2} \, dt$.  How many local extrema does $f$ have?
+  \begin{multipleChoice}
+    \choice[correct]{$0$}
+    \choice{$1$}
+    \choice{Infinitely many}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  Suppose $f$ is a continuous function.  For positive $a$, define $g$ by the rule $g(a) = \int_0^a f(x/a) \, dx$.
+  \begin{multipleChoice}
+    \choice[correct]{$g(2)$ is twice $g(1)$}
+    \choice{$g(2)$ is the same as $g(1)$}
+    \choice{$g(2)$ is half as big as $g(1)$}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  When $n$ is a large integer, what can be said about $\int_0^{n \pi} \cos \sin x \, dx$.
+  \begin{multipleChoice}
+    \choice[correct]{It is large.}
+    \choice{It is close to zero but not exactly zero.}
+    \choice{It is exactly zero.}
+    \choice{It is very negative.}
+  \end{multipleChoice}
+\end{problem}
 
 \begin{problem}
   Suppose $z = 10^{12}$ and $x = \sqrt{z}$ and $y = \sqrt{x}$.  What number below is closest to $x/y$?
@@ -2481,52 +2540,110 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-%\section{More questions from Vic}
 
-\begin{problem}
-  Suppose the domain of $f$ is all real numbers, and $f'$ exists and is continuous, and $f'$ is negative.  What can one say about $f$?
-  \begin{multipleChoice}
-    \choice[correct]{The function $f$ is one-to-one.}
-    \choice{The function $f$ is not necessarily one-to-one.}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Consider the function $f(x) = e^x - x$.  What must be true about $f$?
-  \begin{multipleChoice}
-    \choice[correct]{$f(x) \geq 1$ for all $x$}
-    \choice{$f(x) \leq 1$ for all $x$}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
-  Suppose $W(t)$ is the weight of a person at $t$ years of age.  What does $\int_{18}^{19} W'(t) \, dt = 15$ mean?
-  \begin{multipleChoice}
-    \choice[correct]{First year students gain 15 pounds.}
-    \choice{First year students lose 15 pounds.}
-  \end{multipleChoice}
-\end{problem}
-
-% \begin{problem}
-%   \BADBAD Something about knowing the graph of a function given the graph of
-%   its antiderivative or derivative. (e.g., putting the graphs of two
-%   derivatives and asking for a conclusion about the original
-%   functions- maybe in a story context).
-%   \begin{multipleChoice}
-%     \choice[correct]{You're right!}
-%   \end{multipleChoice}
-% \end{problem}
+% %[EM] 
+% \item Consider the following graph of a function, f, as seen through this window frame.  What can we say about f(1)?\\
+% \includegraphics[scale = 0.3]{window.jpg}\\ %picture with a vertical window bar at x=1
+% a)  f(1)=3\\
+% b)  f(1) is defined but we do not know it's value\\
+% c)  f(1) is not defined\\
+% d)  We don't know anything about f(1)\\
 
 
-% \begin{problem}
-%   \BADBAD One of the problems with, say, product rule: Given the
-%   graphs of f and g, compute the slope of fg at x = 2.
-%   \begin{multipleChoice}
-%     \choice[correct]{You're right!}
-%   \end{multipleChoice}
-% \end{problem}
+% %[EM] 
+% \item A boat is drawn closer to a dock by pulling in a rope as shown at a constant rate.  What can be said about the speed of the boat?\\
+% \includegraphics[scale = 0.7]{boat.jpg}\\
+% a) It is constant\\
+% b) It is increasing\\
+% c) It is decreasing \\
+% d) It depends on how close the boat is to the dock\\
 
-%\end{shuffle} 
+% %[EM] 
+
+
+% %[EM] 
+% \item Suppose you are driving a car and you accelerate from a stopped position to 60 msp with a constant acceleration.  The graph of your position as a function of time over this time interval should look most like which of the following:\\
+% a) \includegraphics[scale = 0.3]{increasingconcaveup.jpg}\hspace{.5in}
+% b) \includegraphics[scale = 0.3]{increasingconcavedown.jpg}\hspace{.5in}
+% c) \includegraphics[scale = 0.3]{decreasingconcavedown.jpg}\hspace{.5in}
+% d) \includegraphics[scale = 0.3]{decreasingconcaveup.jpg}\\
+
+% %[PA] 
+% \item Use the graphs of f and g to evaluate f(g(2)).\\
+% \includegraphics[scale = 1]{f(g(2)).jpg}\\
+% a) -2\\
+% b) 1\\
+% c) 3\\
+% d) 4\\
+% e) not defined\\
+
+% %[PA] 
+% \item What is the relationship between the position of car A and car B at t=1 hr?\\
+% \includegraphics[scale = 1]{speed.jpg}\\
+% %graph from ASU precalculus assessment of speed of cars
+% a) Car A is ahead of car B\\
+% b) Car B is ahead of car A\\
+% c) Car B is passing car A\\
+% d) Car A and car B are colliding\\
+
+
+% %[PA] 
+% \item The graph below represents the height of water as a function of volume as water is poured into a container.  Which container is represented by this graph?\\
+% \includegraphics[scale = 1]{height.jpg}\\
+% \includegraphics[scale = 1]{shapes.jpg}\\
+
+
+% %[PA] 
+% \item Using the graph below, explain the behavior of a function f on the interval from x=5 to x=12.\\
+% \includegraphics[scale = 1]{rategraph.jpg}\\
+% a) Increasing at an increasing rate\\
+% b) Increasing at a decreasing rate\\
+% c) Increasing at a constant rate\\
+% d) Decreasing at a decreasing rate\\
+% e) Decreasing at an increasing rate\\
+
+% %[PA] 22
+% \item A baseball card increasing in value according to the function $b(t)=\frac{5}{2}t+100$, where b gives the value of the card in dollars and t is the time in years since the card was purchased.  Which of the following describe what $\frac{5}{2}$ conveys about the situation?
+
+% I. The card's value increases by \$5 every 2 years\\
+% II. Every year the card's value is 2.5 times greater than the previous year.\\
+% III.  The card's value increases by $\frac{5}{2}$ dollars every year.
+
+% a)  I only\\
+% b) II only\\
+% c) III only\\
+% d) I and III only\\
+% e) I, II, and III\\
+
+% %[PA] 24
+% \item A function f is defined by the following graph.  Which of the following describes the behavior of f?\\
+% \includegraphics[scale = 1]{f.jpg}
+
+% I.  As the value of x approaches 0, the value of f increases.\\
+% II.  As the value of x increases, the value of f approaches 0.\\
+% III.  As the value of x approaches 0, the value of f approaches 0.
+
+% a) I only\\
+% b) II only\\
+% c) III only\\
+% d) I and II\\
+% e) II and III\\
+
+
+% %[PA] 25
+% \item Which of the following best describes the behavior of the function f defined by $f(x)=\frac{x^2}{x-2}$?
+
+% I. As the value of x gets very large, the value of f approaches 2.\\
+% II.  As the value of x gets very large, the value of f increases.\\
+% III.  As the value of x approaches 2, the value of f approaches 0.
+
+% a) I only\\
+% b) II only\\
+% c) III only\\
+% d) I and II\\
+% e) II and III\\
+
+\end{shuffle}
 
 \end{document}
 
