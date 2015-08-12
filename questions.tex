@@ -983,20 +983,23 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-	If $f$ and $g$ both have vertical asymptotes at $x=2$, then $f+g$ also has a vertical asymptote at $x=2$.
-	\begin{multipleChoice}
-		\choice{True}
-		\choice[correct]{False}
-	\end{multipleChoice}
+  If $f$ and $g$ both have vertical asymptotes at $x=2$, then
+  $f+g$ also has a vertical asymptote at $x=2$.
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-	If $f(x)$ and $g(x)$ both have a vertical asymptote to the right of $x=2$, then $f(x)g(x)$ also has a vertical asymptote to the right of $x=2$.
-	\begin{multipleChoice}
-		\choice[correct]{True}
-		\choice{False}
-	\end{multipleChoice}
-\end{problem}
+%% \begin{problem} $$ BADBAD "to the right of" ? 
+%%   If $f$ and $g$ both have a vertical asymptote to the right of
+%%   $x=2$, then $f(x)g(x)$ also has a vertical asymptote to the
+%%   right of $x=2$.
+%%   \begin{multipleChoice}
+%%     \choice[correct]{True}
+%%     \choice{False}
+%%   \end{multipleChoice}
+%% \end{problem}
 
 %%\clearpage
 
@@ -1137,7 +1140,7 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  Suppose $f$ is a differentiable function and $f(0) = 0$.  When $h$
+  Suppose $f$ is a differentiable function with $f(0) = 0$.  When $h$
   is a number close to zero, what do you expect $\frac{f(h)}{h}$ is
   closest to?
   \begin{multipleChoice}
@@ -1150,14 +1153,15 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  Suppose $f$ is a differentiable function.  When $h$ is a number
-  close to zero, what do you expect $\frac{f(4h)}{2h}$ is close to?
+  Suppose $f$ is a differentiable function with $f(0)=0$.  When $h$ is
+  a number close to zero, what do you expect $\frac{f(4h)}{2h}$ is
+  close to?
   \begin{multipleChoice}
-    \choice{$\frac{1}{4} \, f'(0)$}
-    \choice{$\frac{1}{2} \, f'(0)$}
+    \choice{$\frac{1}{4} \cdot f'(0)$}
+    \choice{$\frac{1}{2} \cdot f'(0)$}
     \choice{$f'(0)$}
-    \choice[correct]{$2 \, f'(0)$}
-    \choice{$4 \, f'(0)$}
+    \choice[correct]{$2 \cdot f'(0)$}
+    \choice{$4 \cdot f'(0)$}
   \end{multipleChoice}
 \end{problem}
 
@@ -1372,8 +1376,8 @@ If a function $f$ is not defined at $x=a$,
         \coordinate (B) at (3*.866,3*.5);
         \draw (A)--(O)--(B);
         \draw [very thick] (0,0) circle [radius=3];
-        \tkzMarkAngle[size=1cm,thin](A,O,B)
-        \tkzLabelAngle[pos = .7](A,O,B){$\theta$}
+        \tkzMarkAngle[size=1cm,thin](A,O,B);
+        \tkzLabelAngle[pos = .7](A,O,B){$\theta$};
       \end{tikzpicture}
   \end{image}
   As you change the size of the angle $\theta$, you change the area of
@@ -1561,18 +1565,6 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  On a recent car trip, you spent some time driving about 65~mph and
-  some time driving about 15~mph, but your average speed was about
-  40~mph.  How long did you spend driving at 15~mph versus 65~mph?
-  \begin{multipleChoice}
-    \choice{Nearly the entire time was spent driving 15~mph}
-    \choice{About half the time}
-    \choice{Nearly the entire time was spent driving 65~mph}
-    \choice{It depends on the distance traveled}
-  \end{multipleChoice}
-\end{problem}
-
-\begin{problem}
 %\recommendation{Vic}
   Suppose $f$ is an increasing function, and $x$ and $h$ are positive numbers between $0$ and $1$.  How does $f(x + h)$ compare to $f(x + h^2)$?
   \begin{multipleChoice}
@@ -1740,7 +1732,8 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  Suppose $f$ has a local minimum at $(0,f(0))$ and at $f(1,f(1))$.  What must be true about $f$?
+  Suppose $f$ has a local minimum at $(0,f(0))$ and at $(1,f(1))$.
+  What must be true about $f$?
   \begin{multipleChoice}
     \choice{There is some value of $x$ so that $(x,f(x))$ is a local maximum}
     \choice{There is some value of $x$ so that $(x,f(x))$ is a global minimum}
@@ -1750,7 +1743,7 @@ If a function $f$ is not defined at $x=a$,
 \end{problem}
 
 \begin{problem}
-  Suppose $f$ is a continuous function which has a local minimum at $(0,f(0))$ and at $f(1,f(1))$.  What must be true about $f$?
+  Suppose $f$ is a continuous function which has a local minimum at $(0,f(0))$ and at $(1,f(1))$.  What must be true about $f$?
   \begin{multipleChoice}
     \choice[correct]{There is some value of $x$ so that $(x,f(x))$ is a local maximum}
     \choice{There is some value of $x$ so that $(x,f(x))$ is a global minimum}
@@ -1879,15 +1872,16 @@ If a function $f$ is not defined at $x=a$,
   \end{multipleChoice}
 \end{problem}
 
-\begin{problem}
-%\recommendation{Vic}
-  Consider the graph of $y = f(x)$ and the graph of $y = f(x)^2$.  How many local minimums appear on these graphs?
-  \begin{multipleChoice}
-    \choice{These two graphs have the same number of local minimums.}
-    \choice{The graph of $y = f(x)^2$ has at least as many local minimums as the graph of $y = f(x)$ and could have more}
-    \choice[correct]{The graph of $y = f(x)$ has at least as many local minimums as the graph of $y = f(x)^2$ and could have more}
-  \end{multipleChoice}
-\end{problem}
+%% \begin{problem}
+%% BADBAD f(x)= -5 + 1/(1+x^2), but f^2 has more mins
+%% %\recommendation{Vic}
+%%   Consider the graph of $y = f(x)$ and the graph of $y = f(x)^2$.  How many local minimums appear on these graphs?
+%%   \begin{multipleChoice}
+%%     \choice{These two graphs have the same number of local minimums.}
+%%     \choice{The graph of $y = f(x)^2$ has at least as many local minimums as the graph of $y = f(x)$ and could have more}
+%%     \choice[correct]{The graph of $y = f(x)$ has at least as many local minimums as the graph of $y = f(x)^2$ and could have more}
+%%   \end{multipleChoice}
+%% \end{problem}
 
 \begin{problem}
 %\recommendation{Vic}
@@ -1961,9 +1955,9 @@ If a function $f$ is not defined at $x=a$,
   building and the ground, it is travelling at $v$ m/s.  Just before
   the weight hits the ground, how fast is the weight moving?
   \begin{multipleChoice}
-    \choice[correct]{More than $2v$ m/s}
+    \choice{More than $2v$ m/s}
     \choice{Exactly $2v$ m/s}
-    \choice{Less than $2v$ m/s}
+    \choice[correct]{Less than $2v$ m/s}
   \end{multipleChoice}
 \end{problem}
 
