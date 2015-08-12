@@ -1006,6 +1006,24 @@ If a function $f$ is not defined at $x=a$,
 %\section{Continuity and the Intermediate Value Theorem}
 
 \begin{problem}
+  \recommendation{Elizabeth}
+  \GoodQuestions{Subject: Continuity and the Intermediate Value
+    Theorem 4Q}
+
+  You know the following statement is true: ``If $f$ is a polynomial
+  function, then $f$ is a continuous function.''  Which of the
+  following must also be true?
+  \begin{multipleChoice}
+     \choice[correct]{If $f$ is not continuous, then it is not a polynomial.}
+     \choice{If $f$ is continuous, then it is a polynomial.}
+     \choice{If $f$ is not a polynomial, then it is not continuous.}
+     \choice{None of the above}
+  \end{multipleChoice}
+\end{problem}
+
+
+
+\begin{problem}
   \recommendation{Vic} \GoodQuestions{Subject: Continuity and the
     Intermediate Value Theorem 7P}
   \textbf{True} or \textbf{False}. At some time since you were born
@@ -1299,6 +1317,23 @@ If a function $f$ is not defined at $x=a$,
 
 
 
+
+\begin{problem}
+  \recommendation{Elizabeth}
+  
+  Water is being poured into a semispherical bowl.  Which of the
+  following gives the average rate that water is being added to the
+  bowl?  Let $V$ stand for volume, $r$ stand for radius, and $t$ stand
+  for time and $\Delta$ indicate ``change in''.
+  \begin{multipleChoice}
+    \choice[correct]{$\frac{\Delta V}{\Delta t}$}
+    \choice{$\frac{\Delta r}{\Delta t}$}
+    \choice{$\frac{\Delta V}{\Delta r}$}
+    \choice{none of the above}
+  \end{multipleChoice}
+\end{problem}
+
+
 \begin{problem}
   \recommendation{Vic}
 
@@ -1409,6 +1444,46 @@ If a function $f$ is not defined at $x=a$,
 %%\clearpage
 
 %\section{The product and quotient rules}
+
+\begin{problem}
+  \recommendation{Elizabeth}
+  \GoodQuestions{Subject: Derivative Rules 8P}
+  Suppose over an interval of time, $\Delta t$, the length, $L$, and
+  the width, $W$, of a rectangle grow to $L+\Delta L$ and $W +\Delta
+  W$ respectively as in the sketch below.  
+  \begin{image}
+    \begin{tikzpicture}
+      \coordinate (A) at (0,4);
+      \coordinate (B) at (0,2);
+      \coordinate (C) at (4,2);
+      \coordinate (D) at (4,4);
+      \coordinate (E) at (5,2);
+      \coordinate (F) at (5,5);
+      \coordinate (G) at (0,5);
+            
+      \draw[decoration={brace,mirror,raise=.2cm},decorate,thin] (.2,2)--(3.8,2);
+      \draw[decoration={brace,mirror,raise=.2cm},decorate,thin] (4.2,2)--(4.8,2);
+      \draw[decoration={brace,raise=.2cm},decorate,thin] (0,2.2)--(0,3.8);
+      \draw[decoration={brace,raise=.2cm},decorate,thin] (0,4.2)--(0,4.8);
+      \draw[dashed] (C)--(E)--(F)--(G)--(A);
+      \draw[very thick] (A)--(B)--(C)--(D)--cycle;
+      \node at (2,2-.5) {$L$};
+      \node at (4.5,2-.5) {$\Delta L$};
+      \node at (-.5,3) {$W$};
+      \node at (-.7,4.5) {$\Delta W$};
+      %\node at (6+.5,3.5) {$3$};
+    \end{tikzpicture}
+  \end{image}
+  The average rate of change in the area, $A$, over the time interval
+  $\Delta t$ is
+  \begin{multipleChoice}
+    \choice{$\frac{LW}{\Delta t} + \frac{(\Delta L) (\Delta W)}{\Delta t}$}
+    \choice{$\frac{LW}{\Delta t} + L\frac{\Delta W}{\Delta t} + W\frac{\Delta L}{\Delta t} + \frac{\Delta L \Delta W}{\Delta t}$}
+    \choice{$L\frac{\Delta W}{\Delta t} + W\frac{\Delta L}{\Delta t}$}
+    \choice[correct]{$L\frac{\Delta W}{\Delta t} + W\frac{\Delta L}{\Delta t} + \frac{\Delta L \Delta W}{\Delta t}$}
+  \end{multipleChoice}
+\end{problem}
+
 
 \begin{problem}
   Suppose $A$ is just a bit bigger than $a$ and $B$ is just a bit
