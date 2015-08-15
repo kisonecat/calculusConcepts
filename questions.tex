@@ -13,6 +13,9 @@
 %% project (grant DUE-0231154).
 %% http://www.math.cornell.edu/~GoodQuestions/materials.html
 
+%% Several questions have been borrowed from ASU's Precalculus assessment
+%% https://mathed.asu.edu/instruments/pca/
+
 \title{Conceptual Questions}
 
 %\newcommand{\recommendation}[1]{\textbf{(Recommended by #1)}}
@@ -41,9 +44,9 @@ How did you find out about these questions?
 \end{freeResponse}
 \end{question}
 
-\section{Some questions}
+%\section{Some questions}
 
-\begin{shuffle} 
+%\begin{shuffle} 
 
 
 \begin{problem}
@@ -323,7 +326,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f(x) = x^2$.  How does $f(f(x))$ compare to $f(x)$?
   \begin{multipleChoice}
     \choice{Whenever $x$ is close to one, $f(f(x))$ is close to zero.}
@@ -434,8 +437,8 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Elizabeth}
-  %\GoodQuestions{Subject: Limits, 2Q}
+  \recommendation{Elizabeth}
+  \GoodQuestions{Subject: Limits, 2Q}
   If $f(x)=\frac{x^2-4}{x-2}$ and $g(x)=x+2$, what can we say about
   these two functions?
   \begin{multipleChoice}
@@ -531,7 +534,7 @@ How did you find out about these questions?
 %\section{What is a limit?}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $x$ is a positive number close to zero, and $y$ is a very large number.  What can be said about $y/x$?
   \begin{multipleChoice}
     \choice[correct]{It is very large.}
@@ -670,8 +673,8 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Limits, 11Q}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Limits, 11Q}
   If a function $f$ is not defined at $x=a$, then what must be true?
   \begin{multipleChoice}
     \choice{$\lim_{x\to a} f(x)$ cannot exist}
@@ -682,8 +685,8 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Limits 16Q}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Limits 16Q}
   Consider a function $f$ with the property that
   $\lim_{x\to a} f(x) =0$.  Now consider another function $g$ also
   defined near $a$.  Must it be the case that
@@ -701,8 +704,8 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Limits 19Q}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Limits 19Q}
   What is the maximum number of horizontal asymptotes that a function can have?
   \begin{multipleChoice}
     \choice{One}
@@ -797,8 +800,8 @@ How did you find out about these questions?
 %\section{Continuity and the Intermediate Value Theorem}
 
 \begin{problem}
-  %\recommendation{Elizabeth}
-  %\GoodQuestions{Subject: Continuity and the Intermediate Value Theorem 4Q}
+  \recommendation{Elizabeth}
+  \GoodQuestions{Subject: Continuity and the Intermediate Value Theorem 4Q}
   You know the following statement is true: ``If $f$ is a
     polynomial function, then $f$ is a continuous function.''  Which
     of the following must also be true?
@@ -812,8 +815,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Vic} \GoodQuestions{Subject: Continuity and the
-  %  Intermediate Value Theorem 7P}
+  \recommendation{Vic} \GoodQuestions{Subject: Continuity and the Intermediate Value Theorem 7P}
   At some time since you were born, your weight in pounds equaled your height in inches.  Is this true or false?
 \begin{multipleChoice}
   \choice[correct]{True}
@@ -823,7 +825,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Vic}
+  \recommendation{Vic}
   When I zoom in on the graph of $f$ near the
   point $(a,f(a))$, the zoomed-in graph looks like a straight line.
   When $h$ is very small, how does $f(a)$ compare to $f(a+h)$?
@@ -904,8 +906,96 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Vic} \GoodQuestions{Subject: Tangents, velocities,
-  % and other rates of change 2P}
+  \recommendation{Elizabeth}
+  \PCA{\#25}
+
+  Which of the following best describes the behavior of the function $f$
+  defined by $f(x)=\frac{x^2}{x-2}$?
+
+I. As the value of x gets very large, the value of f approaches 2.\\
+II.  As the value of x gets very large, the value of f increases.\\
+III.  As the value of x approaches 2, the value of f approaches 0.
+%%BADBAD this next part should be an enumerate environment, but I am
+%% unsure if it will be numbered correctly online.
+  \begin{multipleChoice}
+    \choice{I only}
+    \choice[correct]{II only}
+    \choice{III only}
+    \choice{I and II}
+    \choice{II and III}    
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+\recommendation{Elizabeth}
+\PCA{\#24}
+
+A function $f$ is defined by the following graph.  Which of the
+following describes the behavior of $f$?
+\begin{image}
+\includegraphics[scale = 1]{f.jpg}
+\end{image}
+%%BADBAD this next part should be an enumerate environment, but I am
+%% unsure if it will be numbered correctly online.
+ I.  As the value of x approaches 0, the value of f increases.\\
+ II.  As the value of x increases, the value of f approaches 0.\\
+ III.  As the value of x approaches 0, the value of f approaches 0.
+  \begin{multipleChoice}
+    \choice{I only}
+    \choice{II only}
+    \choice{III only}
+    \choice[correct]{I and II}
+    \choice{II and III}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  \recommendation{Elizabeth}
+  \PCA{\#22}
+
+  A baseball card increasing in value according to the function
+  $b(t)=\frac{5}{2}t+100$, where b gives the value of the card in
+  dollars and t is the time in years since the card was purchased.
+  Which of the following describe what $\frac{5}{2}$ conveys about the
+  situation?
+  %%BADBAD this next part should be an enumerate environment, but I am
+  %% unsure if it will be numbered correctly online.
+  I. The card's value increases by \$5 every 2 years\\
+  II. Every year the card's value is 2.5 times greater than the previous year.\\
+  III.  The card's value increases by $\frac{5}{2}$ dollars every year.
+  \begin{multipleChoice}
+    \choice{I only}
+    \choice{II only}
+    \choice{III only}
+    \choice[correct]{I and III only}
+    \choice{I, II, and III}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  \recommendation{Elizabeth}
+
+  \PCA{\#19}
+
+  Using the graph below, explain the behavior of a function $f$ on the
+  interval from $x=5$ to $x=12$.
+  \begin{image}
+    \includegraphics[scale = 1]{rategraph.jpg}
+  \end{image}
+  \begin{multipleChoice}
+    \choice{Increasing at an increasing rate}
+    \choice[correct]{Increasing at a decreasing rate}
+    \choice{Increasing at a constant rate}
+    \choice{Decreasing at a decreasing rate}
+    \choice{Decreasing at an increasing rate}    
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Tangents, velocities, and other rates of change 2P}
   The line tangent to the graph of $f(x)=x$ at $(0,0)$
   \begin{multipleChoice}
   \choice{is $y=0$}
@@ -918,7 +1008,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Let $f(x) = x^{800}$.  How does $A = f(10^{10} + 1)$ compare to $B = f(10^{10} - 1)$?
   \begin{multipleChoice}
     \choice{$A < B$}
@@ -937,7 +1027,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ and $g$ are differentiable functions and $f(1) = g(1)$ and 
   $0 > f'(1) > g'(1)$.  Based only on this information, which quantity
   do you expect to be largest?
@@ -966,8 +1056,8 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Derivatives 2Q}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Derivatives 2Q}
 
   If $f(x)=x^{1/3}$, then there is a
   tangent line at $(0,0)$.  Is this true or false?
@@ -978,8 +1068,8 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Derivatives 7P}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Derivatives 7P}
   If $f'(a)$ exists, then $\lim_{x\to a}f(x)$
   \begin{multipleChoice}
     \choice{exists, but there is not enough information to
@@ -992,8 +1082,8 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Derivatives 9Q}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Derivatives 9Q}
   A slow freight train chugs along a straight track.  The distance it
   has traveled after $x$ hours is given by a function $f(x)$.  An
   engineer is walking along the top of the box cars at the rate of $3$
@@ -1011,7 +1101,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Elizabeth}
+  \recommendation{Elizabeth}
   Water is being poured into a semispherical bowl.  Which of the
   following gives the average rate that water is being added to the
   bowl?  Let $V$ stand for volume, $r$ stand for radius, and $t$ stand
@@ -1026,8 +1116,8 @@ How did you find out about these questions?
 
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Derivative Rules 6P}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Derivative Rules 6P}
   Gravel is poured into a pile. The rate at which gravel is added to
   the pile is
 \begin{multipleChoice}
@@ -1042,6 +1132,40 @@ How did you find out about these questions?
 %%\clearpage
 
 %\section{Higher order derivatives and graphs}
+
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Mean Value Theorem and shapes of curves 1P}
+
+  An article in the Wall Street Journal's ``Heard on the Street''
+  column (\emph{Money and Investment} August 1, 2001) reported that
+  investors often look at the ``change in the rate of change'' to help
+  them ``get into the market before any big rallies.''  Your stock
+  broker alerts you that the rate of change in a stock's price is
+  increasing.  As a result you
+  \begin{multipleChoice}
+    \choice{can conclude the stock's price is decreasing}
+    \choice{can conclude the stock's price is increasing}
+    \choice[correct]{cannot determine whether the stock's price is increasing or decreasing.}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Mean Value Theorem and shapes of curves 2P}
+  
+  Imagine that you are skydiving.  The graph of your speed as a
+  function of time from the time you jumped out of the plane to the
+  time you achieved terminal velocity is
+  \begin{multipleChoice}
+  \choice{increasing and concave up}
+  \choice{decreasing and concave up}
+  \choice[correct]{increasing and concave down}
+  \choice{decreasing and concave down}
+  \end{multipleChoice}
+\end{problem}
+
 
 \begin{problem}
   \recommendation{Elizabeth}
@@ -1069,7 +1193,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Elizabeth}
+  \recommendation{Elizabeth}
   The position of an object is given by a straight line with a
   positive slope.  What can we say about the acceleration of the
   object?
@@ -1156,8 +1280,8 @@ How did you find out about these questions?
 %\section{The product and quotient rules}
 
 \begin{problem}
-  %\recommendation{Elizabeth}
-  %\GoodQuestions{Subject: Derivative Rules 8P}
+  \recommendation{Elizabeth}
+  \GoodQuestions{Subject: Derivative Rules 8P}
   Suppose over an interval of time, $\Delta t$, the length, $L$, and
   the width, $W$, of a rectangle grow to $L+\Delta L$ and $W +\Delta
   W$ respectively as in the sketch below. 
@@ -1231,7 +1355,7 @@ How did you find out about these questions?
 %\section{The chain rule}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f(x) = e^x$ so that $f'(x) = f(x)$.  Let $g(x) = e^{f(x)}$.  What is $g'(x)$?
   \begin{multipleChoice}
     \choice{$g'(x) = e^{(x e^x)}$ by the chain rule}
@@ -1255,8 +1379,8 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Derivative Rules 20P}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Derivative Rules 20P}
   The area of a circle, $A=\pi r^2$, changes as its radius changes. If
   the radius changes with respect to time, the change in area with
   respect to time is
@@ -1273,7 +1397,24 @@ How did you find out about these questions?
 %\section{Mean Value Theorem}
 
 \begin{problem}
-  %\recommendation{Elizabeth}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Mean Value Theorem and shapes of curves 9D}
+
+  Two racers start a race at the same moment and finish in a tie.
+  Which of the following must be true?
+  \begin{multipleChoice}
+  \choice{At some point during the race the two racers were not tied.}
+  \choice{The racers' speeds at the end of the race must have been exactly the same.}
+  \choice[correct]{The racers must have had the same speed at exactly the same
+    time at some point in the race.}
+  \choice{The racers had to have the same speed at some moment, but not
+    necessarily at exactly the same time.}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  \recommendation{Elizabeth}
   A car drives 100 miles in one hour on a highway were the speed limit
   is 80~mph.  What can we say about the car?
   \begin{multipleChoice}
@@ -1353,11 +1494,28 @@ How did you find out about these questions?
 
 %\section{Linear approximation}
 
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Maximum and minimum values 6D}
+  
+  As a tree grows, its trunk increases its volume by adding a growth
+  ring, around the outside of the trunk (assume the thickness of the
+  growth ring is the same over the whole trunk).  The instantaneous
+  rate of change in the volume of the trunk with respect to thickness
+  of the growth ring is
+  \begin{multipleChoice}
+  \choice{the circumference of the trunk.}
+  \choice[correct]{the surface area of the trunk.} 
+  \choice{the thickness of the growth ring times the surface
+    area of the trunk.}    
+  \end{multipleChoice}
+\end{problem}
+
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\recommendation{Elizabeth}
-  %\GoodQuestions{Subject: Linear approximation 7Q}
+  \recommendation{Vic}
+  \recommendation{Elizabeth}
+  \GoodQuestions{Subject: Linear approximation 7Q}
   The volume of an orange is $V$.  Peeling an orange changes its volume.  What does $\Delta V$
   represent?  
   \begin{multipleChoice}
@@ -1375,7 +1533,25 @@ How did you find out about these questions?
 %\section{Maximums and minimums}
 
 \begin{problem}
-%\recommendation{Vic}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Maximum and minimum values 3P}
+  
+  Let $f$ be a continuous function on the closed interval $0\leq x\leq
+  1$. There exists a positive number $A$ so that the graph of $f$ can
+  be drawn inside the rectangle $0\leq x\leq 1$, $-A\leq y\leq A$.
+  \begin{image}
+    \includegraphics[height=2.5in,width=3.5in]{42_1.pdf}
+  \end{image}
+  The above statement is:  
+  \begin{multipleChoice}
+    \choice[correct]{Always true.}
+    \choice{Sometimes true.}
+    \choice{Not enough information.}    
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+\recommendation{Vic}
   Suppose $f$ is a continuous function on the interval $(-1,1)$ and suppose $f(0) = 0$.  How large could $f(0.9999)$ be?
   \begin{multipleChoice}
     \choice[correct]{Bigger than $1$}
@@ -1430,7 +1606,7 @@ How did you find out about these questions?
 %\section{Optimization}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ has a local minimum at $(m,f(m))$.  Let $g(x) = f(x) \cdot f(x)$.  What can be said about $g$?
   \begin{multipleChoice}
     \choice{The function $g$ must have a local minimum at $(m,g(m))$}
@@ -1502,7 +1678,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f(x)^2 + g(x)^2 = 10$ and suppose $f'(a) > 0$.  What must be true about $g'(a)$?
   \begin{multipleChoice}
     \choice{$g'(a) > 0$}
@@ -1517,7 +1693,7 @@ How did you find out about these questions?
 %\section{Derivatives of inverse functions}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   There is a function $f$ so that $f(0) = 0$ and when $h$ is small, $f^{-1}(h)$ is close to $10 h$.  What is a good guess for $f'(0)$?
   \begin{multipleChoice}
     \choice{$10$}
@@ -1528,7 +1704,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ is a function and $f'(0) = 0$.  What is true about $f$?
   \begin{multipleChoice}
     \choice{$f$ can not be an invertible function}
@@ -1564,7 +1740,7 @@ How did you find out about these questions?
 
 %% \begin{problem}
 %% BADBAD f(x)= -5 + 1/(1+x^2), but f^2 has more mins
-%% %\recommendation{Vic}
+%% \recommendation{Vic}
 %%   Consider the graph of $y = f(x)$ and the graph of $y = f(x)^2$.  How many local minimums appear on these graphs?
 %%   \begin{multipleChoice}
 %%     \choice{These two graphs have the same number of local minimums.}
@@ -1640,17 +1816,16 @@ How did you find out about these questions?
 
 \begin{problem}
   \recommendation{Elizabeth}
-
+  \GoodQuestions{Subject: Related Rates 2P}
   A boat is drawn closer to a dock by pulling in a rope as shown at a
   constant rate.  What can be said about the speed of the boat?
   \begin{image}
     \includegraphics[scale=.7]{boat.jpg}
   \end{image}
   \begin{multipleChoice}
-    \choice{It is constant}
-    \choice{It is increasing}
-    \choice[correct]{It is decreasing}
-    \choice{It depends on how close the boat is to the dock}
+    \choice{One is a constant multiple of the other.}
+    \choice{They are equal.}
+    \choice[correct]{It depends on how close the boat is to the dock.}
   \end{multipleChoice}
 \end{problem}
 
@@ -1684,13 +1859,42 @@ How did you find out about these questions?
 
 %\section{Antiderivatives}
 
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Antiderivatives 2P}
+
+  Let $f(x)=\frac{1}{x^2}$, and $F(x)$ be an antiderivative of $f$
+  with the property $F(1)=1$.  {\bf True} or
+  \textbf{False}: $F(-1)=3$.
+  \begin{multipleChoice}
+    \choice{True}
+    \choice[correct]{False}
+  \end{multipleChoice}
+\end{problem}
+
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Antiderivatives 3Q}
+
+  If $f$ is an antiderivative of $g$, and $g$ is an antiderivative of
+  $h$, then
+  \begin{multipleChoice}
+    \choice{$h$ is an antiderivative of $f$}
+    \choice[correct]{$h$ is the second derivative of $f$}
+    \choice{$h$ is the derivative of $f''$}
+  \end{multipleChoice}
+\end{problem}
+
+
+
 
 %%\clearpage
 
 %\section{L'Hopital's rule}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ is a continuously differentiable function and $f(0) = 0$ and $f'(0) = 1$.  Which is the larger quantity?
   \begin{multipleChoice}
     \choice{$\lim_{x \to 0} \frac{f(f(x))}{f(x)}$}
@@ -1775,7 +1979,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ is a positive, increasing, continuous function.  Define $F(x) = \int_0^x f(t) \, dt$.  What can be said about $F$?
   \begin{multipleChoice}
     \choice[correct]{$F(2.1) - F(2) > F(2) - F(1.9)$}
@@ -1795,7 +1999,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ is an odd function. Which of the following must be true?
   \begin{multipleChoice}
     \choice{$\int_{-2}^5 f(x) \, d x= \int_{-2}^2 f(x) \, d x$}
@@ -1808,6 +2012,40 @@ How did you find out about these questions?
 
 
 %\section{The definite integral}
+
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Areas, distances, Riemann sums 2P}
+  
+  You want to estimate the area underneath the graph of a positive
+  function by using four rectangles of equal width. The rectangles
+  that must give the best estimate of this area are those with height
+  obtained from the:
+  \begin{multipleChoice}
+    \choice{Left endpoints}
+    \choice{Midpoints}
+    \choice{Right endpoints}
+    \choice[correct]{Not enough information}    
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Areas, distances, Riemann sums 7P}
+
+  Water is pouring out of a pipe at the rate of $f(t)$
+  gallons/minute.  You collect the water that flows from the pipe
+  between $t=2$ and $t=4$.  The amount of water you collect can be
+  represented by:
+  \begin{multipleChoice}
+    \choice[correct]{$\int_2^4 f(x)\d x$}
+    \choice{$f(4)-f(2)$}
+    \choice{$(4-2)f(4)$}
+    \choice{the average of $f(4)$ and $f(2)$ times the amount of time that elapsed}    
+  \end{multipleChoice}
+\end{problem}
+
 
 \begin{problem}
   Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 1/4$ then $f(x) < g(x)$.  When $x > 1/4$ then $f(x) > g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
@@ -1824,6 +2062,51 @@ How did you find out about these questions?
 %\section{Fundamental Theorem of Calculus}
 
 
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Evaluating definite integrals 1Q}
+  
+  A sprinter practices by running various distances back and forth in
+  a straight line in a gym. Her velocity at $t$ seconds is given by
+  the function $v(t)$. What does $\int_0^{60} |v(t)| dt$ represent?
+  \begin{multipleChoice}
+    \choice[correct]{The total distance the sprinter ran in one minute}
+    \choice{The sprinter's average velocity in one minute}
+    \choice{The sprinter's distance from the starting point after one minute}
+    \choice{None of the above}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Evaluating definite integrals 2P}
+
+  Suppose $f$ is a differentiable function. Then $\int_0^{x} f'(t) \,
+  dt = f(x)$
+  \begin{multipleChoice}
+    \choice{Always}
+    \choice[correct]{Sometimes}
+    \choice{Never}
+  \end{multipleChoice}
+\end{problem}
+
+\begin{problem}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Evaluating definite integrals 5P}
+
+  Suppose the function $f(t)$ is continuous and always positive. If
+  $G$ is an antiderivative of $f$, then we know that $G$:
+  \begin{multipleChoice}
+    \choice{is always positive.}
+    \choice{is sometimes positive and sometimes negative.}
+    \choice[correct]{is always increasing.}
+    \choice{There is not enough information to conclude any of the
+above.}
+  \end{multipleChoice}
+\end{problem}
+
+
+
 %%\clearpage
 
 %\section{The idea of substitution}
@@ -1838,7 +2121,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ is a continuous, positive function so that $f(x) \approx 2$ for all $x$.  When $n$ is very large, about how big is $\int_0^1 f(nx) \, dx$?
   \begin{multipleChoice}
     \choice{About $0$}
@@ -1955,16 +2238,16 @@ How did you find out about these questions?
 \end{multipleChoice}
 \end{problem}
 
-\end{shuffle} 
+%\end{shuffle} 
 
 \hrule
 
-\section{Some harder problems}
+%\section{Some harder problems}
 
-\begin{shuffle}
+%\begin{shuffle}
 
 \begin{problem}
-  %\recommendation{Elizabeth}
+  \recommendation{Elizabeth}
   Suppose $f(t) = t-6$ from $0 \leq t \leq 12$ gives the rate of
   change of the profits for a company over the last year where $t$ is
   measured in months.  What can you say about the company?
@@ -2259,7 +2542,7 @@ How did you find out about these questions?
 \begin{problem}
 
 	%Seems difficult to rephrase without calculus words.
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ is a function and that $\lim_{h \to 0^{+}} f(h) = \lim_{h \to 0^{-}} f(h)$.  What is true about $f$?
   \begin{multipleChoice}
     \choice[correct]{The function $f$ need not be continuous at $0$.}
@@ -2328,8 +2611,8 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-  %\recommendation{Vic}
-  %\GoodQuestions{Subject: Derivative Rules 15P}
+  \recommendation{Vic}
+  \GoodQuestions{Subject: Derivative Rules 15P}
   The expression $\lim_{h\to 0}\frac{\sin (2x+h)-\sin (2x)}{h}$ equals
   \begin{multipleChoice}
     \choice{$\cos x$}
@@ -2373,7 +2656,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $y = mx + b$ is the equation for a tangent line at the point $(100,\log 100)$ to the graph of $f(x) = \log x$.  How does $200m + b$ compare to $\log 200$?
   \begin{multipleChoice}
     \choice[correct]{$200m + b > \log 200$}
@@ -2469,7 +2752,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ and $g$ are two functions with the same derivative at every point.  What quantity below is the best guess for the value of $g(0.998)$?
   \begin{multipleChoice}
     \choice{$g(1) + f(1.02) - f(1)$}
@@ -2524,7 +2807,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f$ and $g$ are continuous functions on the domain $[0,1]$.  When $x < 1/2$ then $f(x) \geq \frac{1}{2} g(x)$.  When $x > 1/2$ then $f(x) \geq 2 g(x)$.  How do the average values of $f$ and $g$ on the interval $[0,1]$ compare?
   \begin{multipleChoice}
     \choice{The average value of $f$ is smaller than (and cannot equal) the average value of $g$}
@@ -2555,7 +2838,7 @@ How did you find out about these questions?
 \end{problem}
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f(a)$ is the area of the region bounded by $0 \leq y \leq x^2$ and $0 \leq x \leq a$.  What integer is closest to $\frac{f(3.01) - f(2.99)}{0.01}$?
   \begin{multipleChoice}
     \choice{3}
@@ -2567,7 +2850,7 @@ How did you find out about these questions?
 
 
 \begin{problem}
-%\recommendation{Vic}
+\recommendation{Vic}
   Suppose $f(x) = \int_0^x \left( mt + b \right) \, dt$.  What is $f^{(3)}(m)$?
   \begin{multipleChoice}
     \choice[correct]{$0$}
@@ -2668,66 +2951,7 @@ How did you find out about these questions?
     \choice{No}
   \end{multipleChoice}
 \end{problem}
-
-
-
-
-
-
-
-
-
-% %[PA] 
-% \item Using the graph below, explain the behavior of a function f on the interval from x=5 to x=12.\\
-% \includegraphics[scale = 1]{rategraph.jpg}\\
-% a) Increasing at an increasing rate\\
-% b) Increasing at a decreasing rate\\
-% c) Increasing at a constant rate\\
-% d) Decreasing at a decreasing rate\\
-% e) Decreasing at an increasing rate\\
-
-% %[PA] 22
-% \item A baseball card increasing in value according to the function $b(t)=\frac{5}{2}t+100$, where b gives the value of the card in dollars and t is the time in years since the card was purchased.  Which of the following describe what $\frac{5}{2}$ conveys about the situation?
-
-% I. The card's value increases by \$5 every 2 years\\
-% II. Every year the card's value is 2.5 times greater than the previous year.\\
-% III.  The card's value increases by $\frac{5}{2}$ dollars every year.
-
-% a)  I only\\
-% b) II only\\
-% c) III only\\
-% d) I and III only\\
-% e) I, II, and III\\
-
-% %[PA] 24
-% \item A function f is defined by the following graph.  Which of the following describes the behavior of f?\\
-% \includegraphics[scale = 1]{f.jpg}
-
-% I.  As the value of x approaches 0, the value of f increases.\\
-% II.  As the value of x increases, the value of f approaches 0.\\
-% III.  As the value of x approaches 0, the value of f approaches 0.
-
-% a) I only\\
-% b) II only\\
-% c) III only\\
-% d) I and II\\
-% e) II and III\\
-
-
-% %[PA] 25
-% \item Which of the following best describes the behavior of the function f defined by $f(x)=\frac{x^2}{x-2}$?
-
-% I. As the value of x gets very large, the value of f approaches 2.\\
-% II.  As the value of x gets very large, the value of f increases.\\
-% III.  As the value of x approaches 2, the value of f approaches 0.
-
-% a) I only\\
-% b) II only\\
-% c) III only\\
-% d) I and II\\
-% e) II and III\\
-
-\end{shuffle}
+%\end{shuffle}
 
 \end{document}
 
