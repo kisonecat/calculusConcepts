@@ -18,6 +18,8 @@
 
 \title{Conceptual Questions}
 
+\renewcommand{\d}{\, d}
+
 %\newcommand{\recommendation}[1]{\textbf{(Recommended by #1)}}
 \newcommand{\recommendation}[1]{}
 %\newcommand{\GoodQuestions}[1]{\marginpar{\textbf{Good Questions} #1}}
@@ -1456,8 +1458,8 @@ following describes the behavior of $f$?
   % \recommendation{Vic}
   Suppose $f$ is an increasing function, and $x$ and $h$ are positive numbers between $0$ and $1$.  How does $f(x + h)$ compare to $f(x + h^2)$?
   \begin{multipleChoice}
-    \choice[correct]{$f(x+h) > f(f+h^2)$}
-    \choice{$f(x+h) < f(f+h^2)$}
+    \choice[correct]{$f(x+h) > f(x+h^2)$}
+    \choice{$f(x+h) < f(x+h^2)$}
     \choice{It depends on the function $f$.}
   \end{multipleChoice}
 \end{problem}
@@ -1617,11 +1619,13 @@ following describes the behavior of $f$?
 \end{problem}
 
 \begin{problem}
-  Suppose $f(m)$ is the minimum value of a function $f$.  Let $g(x) = -f(x) \cdot f(x)$.  What must be true about $g$?
+  Suppose $f(m)$ is the global minimum value of a function $f$.  Let
+  $g(x) = -f(x) \cdot f(x)$.  What must be true about $g$?
   \begin{multipleChoice}
-    \choice{$f(m)^2$ is the minimum value of $g$}
-    \choice{$f(m)^2$ is the maximum value of $g$}
-    \choice[correct]{$f(m)^2$ need not be the maximum or minimum value of $g$}
+    \choice{$-f(m)^2$ is the global minimum value of $g$}
+    \choice{$-f(m)^2$ is the global maximum value of $g$}
+    \choice[correct]{$-f(m)^2$ need not be the global maximum or
+      minimum value of $g$}
   \end{multipleChoice}
 \end{problem}
 
